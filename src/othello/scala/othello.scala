@@ -546,14 +546,6 @@ object OthelloLib {
     }
   }
 
-  // posListの並び順になっているか判定する
-  // 検証用
-  // 先に計算した手を優先するため探索する順番を変えると結果に違いが出る
-  // 評価値が同じだった場合posListが前な方を優先することで結果を同じにする
-  def compPos(pos1: Position, pos2: Position): Boolean = {
-    pos1._2<pos2._2 || (pos1._2==pos2._2 && pos1._1<pos2._1)
-  }
-
   // 中盤の手を返す
   def middlePhase(depth: Int, game: Game): Position = {
     val (board, player) = game
@@ -564,7 +556,7 @@ object OthelloLib {
       var tempMove = (0, 0) //1回目(-∞, ∞)は必ず値が返ってくるので大丈夫
       for(move <- moves){
         val chalScore = alphabetaEval(calcValue, depth-1, alpha, b, applyMove(board, player, move))
-        if(alpha < chalScore){// || (alpha == chalScore && compPos(move, tempMove))){
+        if(alpha < chalScore){
           alpha = chalScore
           tempMove = move
         }
@@ -576,7 +568,7 @@ object OthelloLib {
       var tempMove = (0, 0)
       for(move <- moves){
         val chalScore = alphabetaEval(calcValue, depth-1, a, beta, applyMove(board, player, move))
-        if(beta > chalScore){// || (beta == chalScore && compPos(move, tempMove))){
+        if(beta > chalScore){
           beta = chalScore
           tempMove = move
         }
