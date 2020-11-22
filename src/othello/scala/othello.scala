@@ -243,7 +243,7 @@ object OthelloLib {
     else {
       val pos = strategy(game)
       if (!(outflanks(board, player, pos))) {
-        throw new Exception("invalid move")
+        throw new Exception(f"invalid move $pos")
       }
       else {
         applyMove(board, player, pos)
@@ -276,11 +276,413 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+  // 空白の数を返す
+  // 手数の確認として使える
+  def countEmpty(game: Game): Int = {
+    game._1.flatten.count(s => s==Empty)
+  }
+
+  // 序盤の定石を返す
+  def initialPhase(turn: Int, game: Game): Position = {
+    def opening1(board: Board): Position = {
+      //白の番
+      //縦取りを返す
+      if(board(4)(5) == Black) (4, 6) //(6, 5)に打たれていたとき
+      else if(board(5)(4) == Black) (6, 4) //転置
+      else if(board(3)(2) == Black) (5, 3) //反転
+      else if(board(2)(3) == Black) (3, 5) //反転かつ転置
+      else throw new Exception() //到達しないはず
+    }
+    def opening2(board: Board): Position = {
+      //黒の番
+      //assert(board(4)(5) == Black) //初手は(6, 5)に打っていたとする
+      //if(board(5)(3) == White) (3, 3) //縦取りには虎定石
+      if(board(5)(3) == White) (3, 5) //縦取りには兎定石
+      else if(board(5)(5) == White) (5, 6) //斜め取りには牛定石
+      else if(board(3)(5) == White) (5, 3) //並び取りには鼠定石
+      else throw new Exception() //到達しないはず
+    }
+
+    val next = applyMove(initBoard, Black, (6, 5))._1
+    val vertical = applyMove(next, White, (4, 6))._1
+    val rabbit = applyMove(vertical, Black, (3, 5))._1
+    val tiger = applyMove(vertical, Black, (3, 3))._1
+    def opening3(board: Board): Position = {
+      //白の番
+      //縦取りしていたとする
+      //初手の黒の対称性も考えながら
+      //兎定石と虎定石に対応する
+      val rabbitT = rabbit.transpose
+      val rabbitR = rabbit.map(_.reverse).reverse
+      val rabbitRT = rabbitR.transpose
+      val tigerT = tiger.transpose
+      val tigerR = tiger.map(_.reverse).reverse
+      val tigerRT = tigerR.transpose
+      board match {
+        case `rabbit` => (6, 4)
+        case `rabbitT` => (4, 6)
+        case `rabbitR` => (3, 5)
+        case `rabbitRT` => (5, 3)
+        case `tiger` => (4, 3)
+        case `tigerT` => (3, 4)
+        case `tigerR` => (5, 6)
+        case `tigerRT` => (6, 5)
+        case _ => throw new Exception() //定石を外れた場合
+      }
+    }
+
+    val diagonal = applyMove(next, White, (6, 6))._1
+    val ox = applyMove(diagonal, Black, (5, 6))._1
+    def opening4(board: Board): Position = {
+      //黒の番
+      //初手は(6, 5)に打っていたとする
+      //兎, 牛, 虎に対応する
+      //牛定石のみ相手に対称な返し方がある
+      val rabbit3 = applyMove(rabbit, White, (6, 4))._1
+      val ox3 = applyMove(ox, White, (6, 4))._1
+      val ox3T = ox3.transpose
+      val tiger3 = applyMove(tiger, White, (4, 3))._1
+      board match {
+        case `rabbit3` => (5, 3)
+        case `ox3` => (5, 3)
+        case `ox3T` => (3, 5)
+        case `tiger3` => (3, 4)
+        case _ => throw new Exception() //定石を外れた場合
+      }
+    }
+
+    val (board, player) = game
+    turn match {
+      case 0 => {
+        assert(player == Black)
+        //対称なので全ての手が同じ
+        (6, 5) //ここに打つのが基本らしい
+      }
+      case 1 => {
+        assert(player == White)
+        opening1(board)
+      }
+      case 2 => {
+        assert(player == Black)
+        opening2(board)
+      }
+      case 3 => {
+        assert(player == White)
+        opening3(board)
+      }
+      case 4 => {
+        assert(player == Black)
+        opening4(board)
+      }
+      case _ => throw new Exception() //到達しないはず
+    }
+  }
+
+  //静的なマスの重み
+  //参考にした https://uguisu.skr.jp/othello/5-1.html
+  //負の値が多いことでとりすぎないようになっている
+  val staticWeight = List(
+     30,-12,  0, -1, -1,  0,-12, 30,
+    -12,-15, -3, -3, -3, -3,-15,-12,
+      0, -3,  0, -1, -1,  0, -3,  0,
+     -1, -3, -1, -1, -1, -1, -3, -1,
+     -1, -3, -1, -1, -1, -1, -3, -1,
+      0, -3,  0, -1, -1,  0, -3,  0,
+    -12,-15, -3, -3, -3, -3,-15,-12,
+     30,-12,  0, -1, -1,  0,-12, 30
+  )
+
+  // 静的なマスの重みから評価値を求める
+  def staticValue(board: Board): Int = {
+    board.flatten.zip(staticWeight).map(
+      sw => sw._1 match {
+        case Black => sw._2
+        case Empty => 0
+        case White => -sw._2
+      }
+    ).reduce(_ + _)
+  }
+
+  //(角の周りの)確定石の数を大雑把に計算して評価値を求める
+  def cornerValue(board: Board): Int = {
+    def cornerValueSub(x: Boolean, side1: List[Boolean], side2: List[Boolean]): Int = {
+      //角corner,斜め内側のマスx,2つの辺sideを受け取り確定石の数を返す
+      var sum = 1 //角は確定
+      if(x && side1.head && side2.head && (side1.tail.head || side2.tail.head)) sum += 1
+      //角と隣両方と隣どちらかを確保すれば斜め内側が確定
+      var flag = true //連続しているかを保存する
+      for(b <- side1){
+        if(flag)
+          if(b)
+            sum += 1
+          else
+            flag = false
+      } //角から連続する辺上の石は確定
+      if(flag) sum -= 4
+      //もし辺上を全てとっていたら2重に数えることになるので減らす
+      flag = true
+      for(b <- side2){
+        if(flag)
+          if(b)
+            sum += 1
+          else
+            flag = false
+      }
+      if(flag) sum -= 4
+      sum
+    }
+
+    val sideU = board.head //上の辺 (左から右)
+    val sideL = board.map(_.head) //左の辺 (上から下)
+    val sideR = board.map(_.last) //右の辺 (上から下)
+    val sideD = board.last //下の辺 (左から右)
+
+    val blackNum = //黒の確定石の数
+      (if(board(0)(0)==Black)
+        cornerValueSub(board(1)(1)==Black,
+        sideU.tail.map(_==Black), sideL.tail.map(_==Black))
+      else 0) +
+      (if(board(0)(7)==Black)
+        cornerValueSub(board(1)(6)==Black,
+        sideU.reverse.tail.map(_==Black), sideR.tail.map(_==Black))
+      else 0) +
+      (if(board(7)(0)==Black)
+        cornerValueSub(board(6)(1)==Black,
+        sideD.tail.map(_==Black), sideL.reverse.tail.map(_==Black))
+      else 0) +
+      (if(board(7)(7)==Black)
+        cornerValueSub(board(6)(6)==Black,
+        sideD.reverse.tail.map(_==Black), sideR.reverse.tail.map(_==Black))
+      else 0)
+
+    val whiteNum =
+      (if(board(0)(0)==White)
+        cornerValueSub(board(1)(1)==White,
+        sideU.tail.map(_==White), sideL.tail.map(_==White))
+      else 0) +
+      (if(board(0)(7)==White)
+        cornerValueSub(board(1)(6)==White,
+        sideU.reverse.tail.map(_==White), sideR.tail.map(_==White))
+      else 0) +
+      (if(board(7)(0)==White)
+        cornerValueSub(board(6)(1)==White,
+        sideD.tail.map(_==White), sideL.reverse.tail.map(_==White))
+      else 0) +
+      (if(board(7)(7)==White)
+        cornerValueSub(board(6)(6)==White,
+        sideD.reverse.tail.map(_==White), sideR.reverse.tail.map(_==White))
+      else 0)
+
+    blackNum - whiteNum
+  }
+
+  // 評価関数
+  def calcValue: Heuristic = {
+    game =>
+      val (board, player) = game
+      staticValue(board) + 
+        (if(board(0)(0)==Empty && board(0)(7)==Empty && board(7)(0)==Empty && board(7)(7)==Empty)
+          0 else 10*cornerValue(board))
+      // 静的評価 + (もし角をとっていたら)角の周りの評価
+  }
+
+  //勝敗に応じてほぼ最大,ほぼ最小の値を返す
+  //alphabetaは(Int.MaxValue, Int.MinValue)の中で探すため1つ内側にする
+  def winLose: Heuristic = {
+    game =>
+      val diff = countDiff(game) 
+      if(diff > 0) Int.MaxValue-1
+      else if(diff < 0) Int.MinValue+1
+      else 0
+  }
+
+  //posListに対して
+  //最初から石が置いてある中央の場所を外し
+  //静的評価が高い順に並び替えておく
+  val posListSorted = posList
+    .zip(staticWeight).zip(initBoard.flatten)
+    .collect{case (posWeight, Empty) => posWeight}
+    .sortWith(_._2 > _._2).map(_._1)
+
+  //println(posListSorted)
+
+  // player が石を置ける board 上の座標のリストを返す
+  // 改良した
+  // Emptyの判定はoutflanks内で行われるため不要
+  // あらかじめ静的な評価の高いマスを前に置いている
+  def myValidMoves(board: Board, player: Player): List[Position] = {
+    //posList.filter(outflanks(board, player, _)).filter(boardRef(board, _) == Empty)
+    posListSorted.filter(outflanks(board, player, _))
+  }
+
+  // 中盤の評価値をalpha-beta法で探索する
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    if(gameOver(game)) return winLose(game)
+    if(depth<=0) return heuristic(game)
+    val (board, player) = game
+    val moves = myValidMoves(board, player)
+    if(moves == Nil) return alphabetaEval(heuristic, depth-1, a, b, (board, opponent(player)))
+    /*
+      skipが発生したときdepthの変化量によって
+        -1: 最後に打つ人が同じ 読む深さが同じ
+         0: 空白の数(つまり石の数の合計)が同じになる 裾野の広さが同じくらいになる
+        +1: 最後に打つ人が同じ skipを重視し実質2手深く読む
+      どれも一長一短なので悩む
+    */
+    if(player == Black){
+      var alpha = a //aがそのまま返ってきた場合aを書き換えた場所がありそこで捨てられる
+      for(move <- moves){
+        alpha = max(alpha, alphabetaEval(heuristic, depth-1, alpha, b, applyMove(board, player, move)))
+        if(alpha >= b) return alpha //実際は外側のminで捨てられる
+      }
+      return alpha
+    }else{
+      var beta = b
+      for(move <- moves){
+        beta = min(beta, alphabetaEval(heuristic, depth-1, a, beta, applyMove(board, player, move)))
+        if(beta <= a) return beta
+      }
+      return beta
+    }
+  }
+
+  // posListの並び順になっているか判定する
+  // 検証用
+  // 先に計算した手を優先するため探索する順番を変えると結果に違いが出る
+  // 評価値が同じだった場合posListが前な方を優先することで結果を同じにする
+  def compPos(pos1: Position, pos2: Position): Boolean = {
+    pos1._2<pos2._2 || (pos1._2==pos2._2 && pos1._1<pos2._1)
+  }
+
+  // 中盤の手を返す
+  def middlePhase(depth: Int, game: Game): Position = {
+    val (board, player) = game
+    val moves = myValidMoves(board, player)
+    if(player == Black){
+      val b = Int.MaxValue
+      var alpha = Int.MinValue //tempScore
+      var tempMove = (0, 0) //1回目(-∞, ∞)は必ず値が返ってくるので大丈夫
+      for(move <- moves){
+        val chalScore = alphabetaEval(calcValue, depth-1, alpha, b, applyMove(board, player, move))
+        if(alpha < chalScore){// || (alpha == chalScore && compPos(move, tempMove))){
+          alpha = chalScore
+          tempMove = move
+        }
+      }
+      tempMove
+    }else{
+      val a = Int.MinValue
+      var beta = Int.MaxValue
+      var tempMove = (0, 0)
+      for(move <- moves){
+        val chalScore = alphabetaEval(calcValue, depth-1, a, beta, applyMove(board, player, move))
+        if(beta > chalScore){// || (beta == chalScore && compPos(move, tempMove))){
+          beta = chalScore
+          tempMove = move
+        }
+      }
+      tempMove
+    }
+  }
+
+  // 終盤の評価値をalpha-beta法で探索する
+  // heuristicやdepthが省略されている
+  def endPhaseEval(a: Int, b: Int, game: Game): Int = {
+    if(gameOver(game)) return countDiff(game)
+    val (board, player) = game
+    val moves = myValidMoves(board, player)
+    if(moves == Nil) return endPhaseEval(a, b, (board, opponent(player)))
+    if(player == Black){
+      var alpha = a //aがそのまま返ってきた場合aを書き換えた場所がありそこで捨てられる
+      for(move <- moves){
+        alpha = max(alpha, endPhaseEval(alpha, b, applyMove(board, player, move)))
+        if(alpha >= b) return alpha //実際は外側のminで捨てられる
+      }
+      return alpha
+    }else{
+      var beta = b
+      for(move <- moves){
+        beta = min(beta, endPhaseEval(a, beta, applyMove(board, player, move)))
+        if(beta <= a) return beta
+      }
+      return beta
+    }
+  }
+
+  // 終盤の手を返す
+  def endPhase(game: Game): Position = {
+    val (board, player) = game
+    val moves = myValidMoves(board, player)
+    if(player == Black){
+      val b = 65
+      var alpha = -65 //tempScore
+      var tempMove = (0, 0) //1回目(-∞, ∞)は必ず値が返ってくるので大丈夫
+      for(move <- moves){
+        val chalScore = endPhaseEval(alpha, b, applyMove(board, player, move))
+        if(alpha < chalScore){
+          alpha = chalScore
+          tempMove = move
+        }
+      }
+      tempMove
+    }else{
+      val a = -65
+      var beta = 65
+      var tempMove = (0, 0)
+      for(move <- moves){
+        val chalScore = endPhaseEval(a, beta, applyMove(board, player, move))
+        if(beta > chalScore){
+          beta = chalScore
+          tempMove = move
+        }
+      }
+      tempMove
+    }
+  }
+
+  def saikyoAIpos(depth: Int, depthEnd: Int, game: Game): Position = {
+    val remainEmpty = countEmpty(game)
+    if(remainEmpty >= (60 - 4)) {
+      return try{ initialPhase(60 - remainEmpty, game) }
+      catch{ case e: Exception => 
+        //println("Unexpected Opening")
+        middlePhase(depth, game)
+      } //定石を外れたときは中盤として探索
+    }
+    if(remainEmpty <= depthEnd) return endPhase(game)
+    middlePhase(depth, game)
+  }
+
+  def saikyoAI(depth: Int, depthEnd: Int): Strategy = {
+    game =>
+      saikyoAIpos(depth, depthEnd, game)
+  }
+
+  // 人間のキー入力を受け取る
+  // (0, depth)でAIの手を確認する
+  def human: Strategy = {
+    game =>
+      val (board, player) = game
+      val strMove = io.StdIn.readLine().split(' ')
+      val move = (strMove(0).toInt, strMove(1).toInt)
+      if(move._1 == 0) saikyoAIpos(move._2, 0, game)
+      else if (!(outflanks(board, player, move))) {
+        println("Not a valid move! Please try again.");
+        human(game)
+      }
+      else move
+  }
+
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  //playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, saikyoAI(6, 12), randomMove)
+  //playLoop(newGame, randomMove, saikyoAI(6, 12))
+  //playLoop(newGame, saikyoAI(6, 12), saikyoAI(6, 12))
+  //playLoop(newGame, saikyoAI(6, 12), human)
+  //playLoop(newGame, human, saikyoAI(6, 12))
 }
