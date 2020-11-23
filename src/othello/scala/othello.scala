@@ -231,7 +231,67 @@ object OthelloLib {
   def countDiff: Heuristic = {
     game => countPieces(game._1, Black) - countPieces(game._1, White)
   }
+  
+  //角
+  def corner: Heuristic = {
+    game => 
+      val (board, player) = game
 
+      def score(square: Square): Int = {
+        square match {
+          case Black => 1
+          case White => -1
+          case _ => 0
+        }
+      }
+
+      List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i)
+  }
+
+  //開放度
+  def openRate: Heuristic = {
+    game =>
+      val (board, player) = game
+      validMoves(board, Black).length - validMoves(board, White).length
+  }
+
+  def cornerCountDiff: Heuristic = {
+    game =>
+      val (board, player) = game
+
+      def score(square: Square): Int = {
+        square match {
+          case Black => 1
+          case White => -1
+          case _ => 0
+        }
+      }
+
+      10 * List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i) +
+      countPieces(game._1, Black) - countPieces(game._1, White)
+  }
+
+  //前半と後半で戦略を変える
+  def half: Heuristic = {
+    game =>
+      val total: Int = countPieces(game)
+      val (board, player) = game
+      if(total > 32){
+        validMoves(board, Black).length - validMoves(board, White).length +
+        (countPieces(game._1, Black) - countPieces(game._1, White)) * 5
+      }else{
+        def score(square: Square): Int = {
+          square match {
+            case Black => 1
+            case White => -1
+            case _ => 0
+          }
+        }
+
+        10 * List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i) +
+        countPieces(game._1, Black) - countPieces(game._1, White)
+      }
+  }
   // 戦略の適用
   def applyStrategy(game: Game, strategy: Strategy): Game = {
     val (board, player) = game
@@ -276,11 +336,74 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+  // 3. alphabetaEval
+  // 目的：alpha-beta 法に基づいてゲームの状態を評価する
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    if(depth == 0 || gameOver(game)) return heuristic(game)
+    else {
+      val vList = validMoves(game._1, game._2)
+      if (vList == Nil) alphabetaEval(heuristic, depth, a, b, (game._1, opponent(game._2)))
+      else { 
+        game._2 match {
+          case Black => {
+            var alpha = a
+            for(pos <- vList){
+              val cVal = alphabetaEval(heuristic, depth - 1, alpha, b, applyMove(game._1, game._2, pos))
+              if(cVal >= b) return cVal 
+              alpha = max(alpha, cVal)
+            }
+            return alpha
+          }
+          case White => {
+            var beta = b
+            for(pos <- vList){
+              val cVal = alphabetaEval(heuristic, depth - 1, a, beta, applyMove(game._1, game._2, pos))
+              if(cVal <= a) return cVal 
+              beta = min(beta, cVal)
+            }
+            return beta
+          }
+        }
+      }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：alpha-beta 法に基づいて最適な手を求める
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>
+        var res:Position = (0, 0)
+        game._2 match {
+          case Black => {
+            var score = Int.MinValue
+            for(pos <- validMoves(game._1, game._2)){
+              val sscore = alphabetaEval(heuristic, depth - 1, Int.MinValue, Int.MaxValue, applyMove(game._1, Black, pos))
+              if(score < sscore){
+                score = sscore
+                res = pos
+              }
+            }
+          }
+          case White => {
+            var score = Int.MaxValue
+            for(pos <- validMoves(game._1, game._2)){
+              val sscore = alphabetaEval(heuristic, depth - 1, Int.MinValue, Int.MaxValue, applyMove(game._1, White, pos))
+              if(score > sscore){
+                score = sscore
+                res = pos
+              }
+            }
+          }
+        }
+        res 
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(half, 7), alphabeta(cornerCountDiff, 7))
 }
+
+
