@@ -232,6 +232,7 @@ object OthelloLib {
     game => countPieces(game._1, Black) - countPieces(game._1, White)
   }
   
+  //角
   def corner: Heuristic = {
     game => 
       val (board, player) = game
@@ -247,6 +248,7 @@ object OthelloLib {
       List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i)
   }
 
+  //開放度
   def openRate: Heuristic = {
     game =>
       val (board, player) = game
@@ -269,6 +271,27 @@ object OthelloLib {
       countPieces(game._1, Black) - countPieces(game._1, White)
   }
 
+  //前半と後半で戦略を変える
+  def half: Heuristic = {
+    game =>
+      val total: Int = countPieces(game)
+      val (board, player) = game
+      if(total > 32){
+        validMoves(board, Black).length - validMoves(board, White).length +
+        (countPieces(game._1, Black) - countPieces(game._1, White)) * 5
+      }else{
+        def score(square: Square): Int = {
+          square match {
+            case Black => 1
+            case White => -1
+            case _ => 0
+          }
+        }
+
+        10 * List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i) +
+        countPieces(game._1, Black) - countPieces(game._1, White)
+      }
+  }
   // 戦略の適用
   def applyStrategy(game: Game, strategy: Strategy): Game = {
     val (board, player) = game
@@ -380,7 +403,7 @@ object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, alphabeta(cornerCountDiff, 8), alphabeta(corner, 7))
+  playLoop(newGame, alphabeta(half, 7), alphabeta(cornerCountDiff, 7))
 }
 
-//alphabeta(cornerCountDiff, 5)alphabeta(countDiff, 5)alphabeta(corner, 5)randomMove, openRate
+
