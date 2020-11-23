@@ -276,11 +276,111 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+  def originalEval:Heuristic = {
+    game =>{
+      //参考：https://uguisu.skr.jp/othello/5-1.html
+      def positionEval(game1:Game):Int ={
+        val positionscore1 =
+          List(List(30, 12, 0, -1, -1, 0, -12, 30),
+               List(-12, -15, -3, -3, -3, -3, -15, -12),
+               List(0, -3, 0, -1, -1, 0, -3, 0),
+               List(-1, -3, -1, -1, -1, -1, -3, -1),
+               List(-1, -3, -1, -1, -1, -1, -3, -1),
+               List(0, -3, 0, -1, -1, 0, -3, 0),
+               List(-12, -15, -3, -3, -3, -3, -15, -12),
+               List(30, 12, 0, -1, -1, 0, -12, 30))
+        val (board, player) = game1
+        def calcScore(board1:Board, gyou:Int, retu:Int, oldscore:Int, scoreboard:List[List[Int]]):Int={
+          if (gyou == 8) oldscore
+          else {
+            val positioncolor = board1.apply(gyou).apply(retu)
+            val newscore =
+              positioncolor match{
+                case Black => oldscore + scoreboard.apply(gyou).apply(retu)
+                case White => oldscore - scoreboard.apply(gyou).apply(retu)
+                case Empty => oldscore
+              }
+            val newretu = if(retu == 7) 0 else retu+1
+            val newgyou = if(retu == 7) gyou+1 else gyou
+            calcScore(board1, newgyou, newretu, newscore, scoreboard)
+          }
+        }
+        calcScore(board, 0, 0, 0, positionscore1)
+      }
+      def uterukazu(game:Game):Int = {
+        val (board, player) = game
+        player match{
+          case Black => validMoves(board, player).length
+          case White => -(validMoves(board, player).length)
+        }
+      }
+      val piecenum = countPieces(game)
+      if (piecenum <= 20) positionEval(game)*2 - countDiff(game)
+      else if (piecenum <= 50) positionEval(game) + countDiff(game) + uterukazu(game)*20
+      else positionEval(game) + uterukazu(game) + countDiff(game)*2
+    }
+  }
+  
+  def originalStrategy:Strategy ={
+    alphabeta(originalEval, 5)
+  }
+
+
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    if (gameOver(game)) countDiff(game)
+    else if (depth == 0) heuristic(game)
+    else{
+      val (board, player) = game
+      val nextPos = validMoves(board, player)
+      if (nextPos == Nil) alphabetaEval(heuristic, depth, a, b, (board, opponent(player)))
+      else{
+        val nextBoards = nextPos.foldLeft(Nil:List[Board])((x, pos) => applyMove(board, player, pos)._1 :: x)
+        player match {
+          case Black =>{
+            var v = Int.MinValue
+            var alpha = a
+            for (child <- nextBoards){
+              v = max(v, alphabetaEval(heuristic, depth-1, alpha, b, (child, White)))
+              alpha = max(alpha, v)
+              if (alpha >= b) return v 
+            }
+            return v
+          }
+          case White =>{        
+            var v = Int.MaxValue
+            var beta = b
+            for (child <- nextBoards){
+              v = min(v, alphabetaEval(heuristic, depth-1, a, beta, (child, Black)))
+              beta = min(beta, v)
+              if (beta <= a) return v 
+            }
+            return v
+          }
+
+        }
+      }
+    }
+  }
+
+
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>{
+      val (board, player) = game
+      val nextPos:List[Position] = validMoves(board, player)
+      val posAndScore:List[(Position, Int)] = nextPos.foldLeft(Nil:List[(Position, Int)])((x, childPos) =>
+        (childPos, alphabetaEval(heuristic, depth-1, Int.MinValue, Int.MaxValue, applyMove(board, player, childPos))) :: x)
+      player match{
+      case Black => posAndScore.foldLeft(((0, 0), Int.MinValue))((x, pos) => if (x._2<pos._2) pos else x)._1
+      case White => posAndScore.foldLeft(((0, 0), Int.MaxValue))((x, pos) => if (x._2>pos._2) pos else x)._1
+      }
+    }
+  }
+
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, originalStrategy, randomMove)
 }
