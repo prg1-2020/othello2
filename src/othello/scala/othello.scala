@@ -247,6 +247,12 @@ object OthelloLib {
       List(board(0)(7), board(0)(0), board(7)(0), board(7)(7)).foldLeft(0)((i, c) => score(c) + i)
   }
 
+  def openRate: Heuristic = {
+    game =>
+      val (board, player) = game
+      validMoves(board, Black).length - validMoves(board, White).length
+  }
+
   def cornerCountDiff: Heuristic = {
     game =>
       val (board, player) = game
@@ -374,7 +380,7 @@ object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, alphabeta(cornerCountDiff, 4), alphabeta(countDiff, 8))
+  playLoop(newGame, alphabeta(cornerCountDiff, 8), alphabeta(corner, 7))
 }
 
-//alphabeta(cornerCountDiff, 5)alphabeta(countDiff, 5)alphabeta(corner, 5)randomMove
+//alphabeta(cornerCountDiff, 5)alphabeta(countDiff, 5)alphabeta(corner, 5)randomMove, openRate
