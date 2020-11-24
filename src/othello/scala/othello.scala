@@ -11,7 +11,6 @@ package othello
 
 import scala.math.max
 import scala.math.min
-import scala.math.random
 
 object OthelloLib {
 
@@ -208,21 +207,32 @@ object OthelloLib {
   // 戦略
   type Strategy = Game => Position
 
-  // ランダムに手を選ぶ
-  def randomMove: Strategy = {
+  // posList を前から順番に見ていき、可能な手を見つける
+  def firstMove(game: Game): Position = {
 
-    def nth[A](list: List[A], n: Int): A = {
-      (list, n) match {
-        case (a :: as, 0) => a
-        case (a :: as, n) => nth(as, n - 1)
+    def firstMoveAux(list: List[Position]): Position = {
+      val (board, player) = game
+      list match {
+        case Nil => throw new Exception("no valid move")
+        case p :: ps => if (outflanks(board, player, p)) p else firstMoveAux(ps)
       }
     }
 
+    firstMoveAux(posList)
+  }
+
+  // 人間のキー入力を受け取る
+  def human: Strategy = {
     game =>
       val (board, player) = game
-      val positions = validMoves(board, player)
-      nth(positions, (random() * positions.length).toInt)
-    }
+      val strMove = io.StdIn.readLine().split(' ')
+      val move = (strMove(0).toInt, strMove(1).toInt)
+      if (!(outflanks(board, player, move))) {
+        println("Not a valid move! Please try again.");
+        human(game)
+      }
+      else move
+  }
 
   // ヒューリスティック
   type Heuristic = Game => Int
@@ -230,6 +240,18 @@ object OthelloLib {
   // 黒 - 白 の値を返す
   def countDiff: Heuristic = {
     game => countPieces(game._1, Black) - countPieces(game._1, White)
+  }
+
+  def countTe: Heuristic ={
+      game => validMoves(game._1, game._2).size
+  }
+  def first_last:Heuristic = {
+      game =>{
+          val (board, player) = game
+          if(countPieces(game)< 30) validMoves(game._1, game._2).size
+          else countPieces(game._1, Black) - countPieces(game._1, White)
+
+      }
   }
 
   // 戦略の適用
@@ -272,15 +294,191 @@ object OthelloLib {
     }
   }
 
-  //////////////////
-  // オリジナルの戦略 //
-  //////////////////
+  /////////
+  // 課題 //
+  /////////
 
+  // 1. minimaxEval
+  // 目的：minimax法に基づいてゲームの状態を評価してInt型の数値を返す関数
+  def minimaxEval(heuristic: Heuristic, depth: Int, game: Game): Int = {
+    val (board, player) = game
+    val nextPlayer = opponent(player)
+    if (gameOver(game)) countDiff(game) //gameover
+    else if (depth == 0) countDiff(game) //depth =0
+    else if (validMoves(board,player).size == 0) minimaxEval(heuristic,depth,(board,nextPlayer)) //skip
+    else {
+        //minimax
+        player match{
+            case Black=>{
+                validMoves(board, player).foldLeft(Int.MinValue)((v,pos)=> max(v,minimaxEval(heuristic, depth-1, applyMove(board,player,pos))))
+            }
+            case White => {
+                validMoves(board, player).foldLeft(Int.MaxValue)((v,pos)=> min(v,minimaxEval(heuristic,depth-1,applyMove(board,player,pos))))
+            }
+        }
+    }
+  }
+
+  // 2. minimax
+  // 目的：minimax法に基づき、先のminimaxEvalを用いて最適な手を返す関数。
+  def minimax(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>{
+        val (board, player) = game
+        val nextPlayer = opponent(player)
+        val valid_pos_list = validMoves(board, player)
+        player match{
+            case Black =>{
+                val init = -100
+                valid_pos_list.foldLeft[(Int,Position)]((init,(-1,-1)))(
+                    (v, pos) => {
+                        val mme = minimaxEval(heuristic, depth-1, applyMove(board, player, pos))
+                        if(v._1 < mme) (mme,pos)
+                        else v
+                    }
+                )._2
+            }
+            case White =>{
+                val init = 100
+                valid_pos_list.foldLeft[(Int,Position)]((init,(-1,-1)))(
+                    (v, pos) => {
+                        val mme = minimaxEval(heuristic, depth-1, applyMove(board, player, pos))
+                        if(v._1 > mme) (mme,pos)
+                        else v
+                    }
+                )._2
+            }
+        }
+    }
+  }
+
+  // 3. alphabetaEval
+  // 目的：alphabeta法に基づいてゲームの状態を評価してInt型の数値を返す関数
+  
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val (board, player) = game
+    val nextPlayer = opponent(player)
+    val valid_pos_list = validMoves(board, player)
+    if (depth == 0) heuristic(game)
+    else if(gameOver(game)) heuristic(game)
+    else if(valid_pos_list == Nil) minimaxEval(heuristic, depth, (board, opponent(player)))
+    else{
+        player match{
+            case Black =>{
+                var v = Int.MinValue
+                var alpha = a
+                for (c <- valid_pos_list){
+                    v = max(v,alphabetaEval(heuristic,depth-1,alpha,b,applyMove(board,player,c)))
+                    alpha = max(alpha,v)
+                    if (alpha >= b) return v
+                }
+                return v
+            }
+            case White => {
+                var v = Int.MaxValue
+                var beta = b
+                for (c <- valid_pos_list){
+                    v = min(v,alphabetaEval(heuristic,depth-1,a,beta,applyMove(board,player,c)))
+                    beta = min(beta,v)
+                    if (beta <= a) return v
+                }
+                return v
+            }
+        }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：alphabeta法に基づき、最適な手を返す関数。
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>
+        val (board, player) = game
+        val nextPlayer = opponent(player)
+        val valid_pos_list = validMoves(board, player)
+        player match{
+            case Black =>{
+                val init = -100
+                valid_pos_list.foldLeft[(Int,Position)]((init,(-1,-1)))(
+                    (v, pos) => {
+                        val mme = alphabetaEval(heuristic, depth-1, -init, init, applyMove(board, player, pos))
+                        if(v._1 < mme) (mme,pos)
+                        else v
+                    }
+                )._2
+            }
+            case White =>{
+                val init = 100
+                valid_pos_list.foldLeft[(Int,Position)]((init,(-1,-1)))(
+                    (v, pos) => {
+                        val mme = alphabetaEval(heuristic, depth-1, -init, -init, applyMove(board, player, pos))
+                        if(v._1 > mme) (mme,pos)
+                        else v
+                    }
+                )._2
+            }
+        }
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
-  // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  // どれか1つのコメントを外す
+
+  // 黒, 白ともに firstMove
+   //playLoop(newGame, firstMove, firstMove)
+
+  // 黒：人間, 白：firstMove
+   //playLoop(newGame, human, firstMove)
+
+  // 黒, 白ともに深さ4の minimax 法
+  //playLoop(newGame, minimax(countDiff, 6), minimax(countDiff, 6))
+
+  // 黒, 白ともに深さ4の alpha-beta 法
+    playLoop(newGame, alphabeta(first_last, 6), alphabeta(countTe, 6))
 }
+
+// 5. 実験結果
+/*
+実験１
+黒の戦略：minimax(countDiff, 6)
+白の戦略：minimax(countDiff, 6)
+黒 vs. 白の数：52 vs 12
+実行時間 (Total time)：50s
+
+実験２
+黒の戦略：alphabeta(countDiff, 6)
+白の戦略：minimax(countDiff, 6)
+黒 vs. 白の数：21 vs 43
+実行時間 (Total time)：106s
+
+実験３
+黒の戦略：minimax(countDiff, 6)
+白の戦略：minimax(countDiff, 2)
+黒 vs. 白の数：50 vs 14
+実行時間 (Total time)： 74s
+
+実験４
+黒の戦略：alphabeta(countDiff, 6)
+白の戦略：alphabeta(countDiff, 6)
+黒 vs. 白の数：31 vs 33
+実行時間 (Total time)：1s
+
+考察：
+各実験番号を１…４で表す。また、時間を正確に測りたいので深さを４から６にした。
+
+1vs2　目的：minimaxをalphabetaに変えることで枝刈りを行うが、それによる結果の変化を調べる
+まず、対戦結果に関して予想では同じものになると思ったが全く変わってしまった。どこかで実装を誤っている可能性。
+時間に関しては、4よりalphabeの実行時間は１s程度と考えるので、2は１の半分程度つまり２５sと予想したが、これに反して長くなった。
+
+1vs3 目的：深さに差異をつけることでの変化を調べる。
+対戦結果では、１の時より、深さが大きいもののほうが良い結果となった。
+ただ、時間に関して、これも１の時の半分くらいと予想したが、より長い時間がかかってしまった。
+
+1vs4 目的：戦略を変えることでの結果と時間。
+結果は１と同じものとなって欲しかったが、変わってしまった。
+時間は予想通り早くなった。
+
+結論
+alphabetaはminimaxよりも計算効率がいい。
+（対戦結果はヒューリスティックに依存するため問題にしない）。
+*/
