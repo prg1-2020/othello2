@@ -335,6 +335,10 @@ object OthelloLib {
 
   def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
     game =>
+      if (outflanks(game._1,game._2,(1,1)))(1,1)
+      if (outflanks(game._1,game._2,(1,8)))(1,8)
+      if (outflanks(game._1,game._2,(8,1)))(8,1)
+      if (outflanks(game._1,game._2,(8,8)))(8,8)
       var startposition:Position = (0, 0)
         game._2 match {
           case Black => {
@@ -366,5 +370,5 @@ object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, alphabeta(saikyou,5), randomMove)
+  playLoop(newGame, alphabeta(saikyou,6), randomMove)
 }
