@@ -232,6 +232,11 @@ object OthelloLib {
     game => countPieces(game._1, Black) - countPieces(game._1, White)
   }
 
+  // 板面の石の総数を返す
+  def countPlus: Heuristic = {
+    game => countPieces(game._1, Black) + countPieces(game._1, White)
+  }
+
   // 戦略の適用
   def applyStrategy(game: Game, strategy: Strategy): Game = {
     val (board, player) = game
@@ -276,11 +281,94 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+  def hugou(game:Game,pos:Position):Int={
+    if(boardRef(game._1,pos)==Black) 1
+    else if (boardRef(game._1,pos)==White) -1
+    else 0
+  }
+
+  val appraiseList :List[(Position,Int)]=
+    List(((1, 1),30), ((2, 1),-12), ((3, 1),0), ((4, 1),0), ((5, 1),0), ((6, 1),0), ((7, 1),-12), ((8, 1),30),
+      ((1, 2),-12), ((2, 2),-15), ((3, 2),-3), ((4, 2),-3), ((5, 2),-3), ((6, 2),-3), ((7, 2),-15), ((8, 2),-12),
+      ((1, 3),0), ((2, 3),-3), ((3, 3),0), ((4, 3),-1), ((5, 3),-1), ((6, 3),0), ((7, 3),-3), ((8, 3),0),
+      ((1, 4),0), ((2, 4),-3), ((3, 4),-1), ((4, 4),-1), ((5, 4),-1), ((6, 4),-1), ((7, 4),-3), ((8, 4),0),
+      ((1, 5),0), ((2, 5),-3), ((3, 5),-1), ((4, 5),-1), ((5, 5),-1), ((6, 5),-1), ((7, 5),-3), ((8, 5),0),
+      ((1, 6),0), ((2, 6),-3), ((3, 6),0), ((4, 6),-1), ((5, 6),-1), ((6, 6),0), ((7, 6),-3), ((8, 6),0),
+      ((1, 7),-12), ((2, 7),-15), ((3, 7),-3), ((4, 7),-3), ((5, 7),-3), ((6, 7),-3), ((7, 7),-15), ((8, 7),-12),
+      ((1, 8),30), ((2, 8),-12), ((3, 8),0), ((4, 8),0), ((5, 8),0), ((6, 8),0), ((7, 8),-12), ((8, 8),30))
+  
+  def saikyou:Heuristic={
+    game =>
+      if (countPlus(game)<=44)appraiseList.foldLeft(0){(acc,x) => acc + hugou(game,x._1)*x._2}
+      else countDiff(game)
+  }
+
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    if(depth == 0 || gameOver(game)) return heuristic(game)
+    else {
+      val validList = validMoves(game._1, game._2)
+      if (validList == Nil) alphabetaEval(heuristic, depth, a, b, (game._1, opponent(game._2)))
+      else { 
+        game._2 match {
+          case Black => {
+            var alpha = a
+            for(pos <- validList){
+              val v = alphabetaEval(heuristic, depth - 1, alpha, b, applyMove(game._1, game._2, pos))
+              if(v >= b) return v 
+              alpha = max(alpha, v)
+            }
+            return alpha
+          }
+          case White => {
+            var beta = b
+            for(pos <- validList){
+              val v = alphabetaEval(heuristic, depth - 1, a, beta, applyMove(game._1, game._2, pos))
+              if(v <= a) return v 
+              beta = min(beta, v)
+            }
+            return beta
+          }
+        }
+      }
+    }
+  }
+
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>
+      if (outflanks(game._1,game._2,(1,1)))(1,1)
+      if (outflanks(game._1,game._2,(1,8)))(1,8)
+      if (outflanks(game._1,game._2,(8,1)))(8,1)
+      if (outflanks(game._1,game._2,(8,8)))(8,8)
+      var startposition:Position = (0, 0)
+        game._2 match {
+          case Black => {
+            var setvalue = Int.MinValue
+            for(pos <- validMoves(game._1, game._2)){
+              val appraiseEval = alphabetaEval(heuristic, depth - 1, Int.MinValue, Int.MaxValue, applyMove(game._1, Black, pos))
+              if(setvalue < appraiseEval){
+                setvalue = appraiseEval
+                startposition = pos
+              }
+            }
+          }
+          case White => {
+            var setvalue = Int.MaxValue
+            for(pos <- validMoves(game._1, game._2)){
+              val appraiseEval = alphabetaEval(heuristic, depth - 1, Int.MinValue, Int.MaxValue, applyMove(game._1, White, pos))
+              if(setvalue > appraiseEval){
+                setvalue = appraiseEval
+                startposition = pos
+              }
+            }
+          }
+        }
+        startposition 
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(saikyou,6), randomMove)
 }
