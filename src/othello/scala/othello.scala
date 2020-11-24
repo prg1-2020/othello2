@@ -13,6 +13,10 @@ import scala.math.max
 import scala.math.min
 import spire.math.ULong
 import spire.math.UByte
+import scala.concurrent._
+import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
+import concurrent.duration.Duration
 
 object OthelloLib {
   // マス目
@@ -157,6 +161,12 @@ object OthelloLib {
     reverse = ((reverse & UByte(170)) >> 1) | ((reverse & UByte(85)) << 1)
     reverse
   }
+
+  /** ULong中のflagが立っている場所をposListにして返す
+    *
+    * @param board
+    * @return
+    */
   def longToPosList(board: ULong): List[Position] = {
     var mask = new ULong(0x8000000000000000L)
     var list = List.empty[Position]
@@ -341,6 +351,26 @@ object OthelloLib {
     }
     rev
   }
+  def get_some_moves(p: ULong, mask: ULong, dir: Int): ULong = {
+    var flip_l = new ULong(0)
+    var flip_r = new ULong(0)
+    var mask_l = new ULong(0)
+    var mask_r = new ULong(0)
+    val dir2 = dir + dir
+
+    flip_l = mask & (p << dir)
+    flip_r = mask & (p >> dir)
+    flip_l |= mask & (flip_l << dir)
+    flip_r |= mask & (flip_r >> dir)
+    mask_l = mask & (mask << dir)
+    mask_r = mask & (mask >> dir)
+    flip_l |= mask_l & (flip_l << dir2)
+    flip_r |= mask_r & (flip_r >> dir2)
+    flip_l |= mask_l & (flip_l << dir2)
+    flip_r |= mask_r & (flip_r >> dir2)
+
+    (flip_l << dir) | (flip_r >> dir)
+  }
 
   // player が石を置ける board 上の座標のリストを返す
   def validMoves(board: Board, player: Player): ULong = {
@@ -379,92 +409,113 @@ object OthelloLib {
     val (playerBoard, opponentBoard) =
       if (player == Black) (black, white) else (white, black)
 
-    //左右端の番人
-    val horizontalWatchBoard: ULong = opponentBoard & ULong(0x7e7e7e7e7e7e7e7eL)
-    //上下端の番人
-    val verticalWatchBoard: ULong = opponentBoard & ULong(0x00ffffffffffff00L)
-    //全辺の番人
-    val allSideWatchBoard: ULong = opponentBoard & ULong(0x007e7e7e7e7e7e00L)
-    //空きマスのみにビットが立っているボード
-    val blankBoard: ULong = ~(playerBoard | opponentBoard)
-    //隣に相手の色があるかを一時保存する
-    var tmp: ULong = ULong(0)
-    //返り値
-    var legalBoard: ULong = ULong(0)
+    // //左右端の番人
+    // val horizontalWatchBoard: ULong = opponentBoard & ULong(0x7e7e7e7e7e7e7e7eL)
+    // //上下端の番人
+    // val verticalWatchBoard: ULong = opponentBoard & ULong(0x00ffffffffffff00L)
+    // //全辺の番人
+    // val allSideWatchBoard: ULong = opponentBoard & ULong(0x007e7e7e7e7e7e00L)
+    // //空きマスのみにビットが立っているボード
+    // val blankBoard: ULong = ~(playerBoard | opponentBoard)
+    // //隣に相手の色があるかを一時保存する
+    // var tmp: ULong = ULong(0)
+    // //返り値
+    // var legalBoard: ULong = ULong(0)
 
-    tmp = horizontalWatchBoard & (playerBoard << 1)
-    tmp |= horizontalWatchBoard & (tmp << 1)
-    tmp |= horizontalWatchBoard & (tmp << 1)
-    tmp |= horizontalWatchBoard & (tmp << 1)
-    tmp |= horizontalWatchBoard & (tmp << 1)
-    tmp |= horizontalWatchBoard & (tmp << 1)
-    legalBoard = blankBoard & (tmp << 1)
+    // tmp = horizontalWatchBoard & (playerBoard << 1)
+    // tmp |= horizontalWatchBoard & (tmp << 1)
+    // tmp |= horizontalWatchBoard & (tmp << 1)
+    // tmp |= horizontalWatchBoard & (tmp << 1)
+    // tmp |= horizontalWatchBoard & (tmp << 1)
+    // tmp |= horizontalWatchBoard & (tmp << 1)
+    // legalBoard = blankBoard & (tmp << 1)
 
-    //右
-    tmp = horizontalWatchBoard & (playerBoard >> 1)
-    tmp |= horizontalWatchBoard & (tmp >> 1)
-    tmp |= horizontalWatchBoard & (tmp >> 1)
-    tmp |= horizontalWatchBoard & (tmp >> 1)
-    tmp |= horizontalWatchBoard & (tmp >> 1)
-    tmp |= horizontalWatchBoard & (tmp >> 1)
-    legalBoard |= blankBoard & (tmp >> 1)
+    // //右
+    // tmp = horizontalWatchBoard & (playerBoard >> 1)
+    // tmp |= horizontalWatchBoard & (tmp >> 1)
+    // tmp |= horizontalWatchBoard & (tmp >> 1)
+    // tmp |= horizontalWatchBoard & (tmp >> 1)
+    // tmp |= horizontalWatchBoard & (tmp >> 1)
+    // tmp |= horizontalWatchBoard & (tmp >> 1)
+    // legalBoard |= blankBoard & (tmp >> 1)
 
-    //上
-    tmp = verticalWatchBoard & (playerBoard << 8)
-    tmp |= verticalWatchBoard & (tmp << 8)
-    tmp |= verticalWatchBoard & (tmp << 8)
-    tmp |= verticalWatchBoard & (tmp << 8)
-    tmp |= verticalWatchBoard & (tmp << 8)
-    tmp |= verticalWatchBoard & (tmp << 8)
-    legalBoard |= blankBoard & (tmp << 8)
+    // //上
+    // tmp = verticalWatchBoard & (playerBoard << 8)
+    // tmp |= verticalWatchBoard & (tmp << 8)
+    // tmp |= verticalWatchBoard & (tmp << 8)
+    // tmp |= verticalWatchBoard & (tmp << 8)
+    // tmp |= verticalWatchBoard & (tmp << 8)
+    // tmp |= verticalWatchBoard & (tmp << 8)
+    // legalBoard |= blankBoard & (tmp << 8)
 
-    //下
-    tmp = verticalWatchBoard & (playerBoard >> 8)
-    tmp |= verticalWatchBoard & (tmp >> 8)
-    tmp |= verticalWatchBoard & (tmp >> 8)
-    tmp |= verticalWatchBoard & (tmp >> 8)
-    tmp |= verticalWatchBoard & (tmp >> 8)
-    tmp |= verticalWatchBoard & (tmp >> 8)
-    legalBoard |= blankBoard & (tmp >> 8)
+    // //下
+    // tmp = verticalWatchBoard & (playerBoard >> 8)
+    // tmp |= verticalWatchBoard & (tmp >> 8)
+    // tmp |= verticalWatchBoard & (tmp >> 8)
+    // tmp |= verticalWatchBoard & (tmp >> 8)
+    // tmp |= verticalWatchBoard & (tmp >> 8)
+    // tmp |= verticalWatchBoard & (tmp >> 8)
+    // legalBoard |= blankBoard & (tmp >> 8)
 
-    //右斜め上
-    tmp = allSideWatchBoard & (playerBoard << 7)
-    tmp |= allSideWatchBoard & (tmp << 7)
-    tmp |= allSideWatchBoard & (tmp << 7)
-    tmp |= allSideWatchBoard & (tmp << 7)
-    tmp |= allSideWatchBoard & (tmp << 7)
-    tmp |= allSideWatchBoard & (tmp << 7)
-    legalBoard |= blankBoard & (tmp << 7)
+    // //右斜め上
+    // tmp = allSideWatchBoard & (playerBoard << 7)
+    // tmp |= allSideWatchBoard & (tmp << 7)
+    // tmp |= allSideWatchBoard & (tmp << 7)
+    // tmp |= allSideWatchBoard & (tmp << 7)
+    // tmp |= allSideWatchBoard & (tmp << 7)
+    // tmp |= allSideWatchBoard & (tmp << 7)
+    // legalBoard |= blankBoard & (tmp << 7)
 
-    //左斜め上
-    tmp = allSideWatchBoard & (playerBoard << 9)
-    tmp |= allSideWatchBoard & (tmp << 9)
-    tmp |= allSideWatchBoard & (tmp << 9)
-    tmp |= allSideWatchBoard & (tmp << 9)
-    tmp |= allSideWatchBoard & (tmp << 9)
-    tmp |= allSideWatchBoard & (tmp << 9)
-    legalBoard |= blankBoard & (tmp << 9)
+    // //左斜め上
+    // tmp = allSideWatchBoard & (playerBoard << 9)
+    // tmp |= allSideWatchBoard & (tmp << 9)
+    // tmp |= allSideWatchBoard & (tmp << 9)
+    // tmp |= allSideWatchBoard & (tmp << 9)
+    // tmp |= allSideWatchBoard & (tmp << 9)
+    // tmp |= allSideWatchBoard & (tmp << 9)
+    // legalBoard |= blankBoard & (tmp << 9)
 
-    //右斜め下
-    tmp = allSideWatchBoard & (playerBoard >> 9)
-    tmp |= allSideWatchBoard & (tmp >> 9)
-    tmp |= allSideWatchBoard & (tmp >> 9)
-    tmp |= allSideWatchBoard & (tmp >> 9)
-    tmp |= allSideWatchBoard & (tmp >> 9)
-    tmp |= allSideWatchBoard & (tmp >> 9)
-    legalBoard |= blankBoard & (tmp >> 9)
+    // //右斜め下
+    // tmp = allSideWatchBoard & (playerBoard >> 9)
+    // tmp |= allSideWatchBoard & (tmp >> 9)
+    // tmp |= allSideWatchBoard & (tmp >> 9)
+    // tmp |= allSideWatchBoard & (tmp >> 9)
+    // tmp |= allSideWatchBoard & (tmp >> 9)
+    // tmp |= allSideWatchBoard & (tmp >> 9)
+    // legalBoard |= blankBoard & (tmp >> 9)
 
-    //左斜め下
-    tmp = allSideWatchBoard & (playerBoard >> 7)
-    tmp |= allSideWatchBoard & (tmp >> 7)
-    tmp |= allSideWatchBoard & (tmp >> 7)
-    tmp |= allSideWatchBoard & (tmp >> 7)
-    tmp |= allSideWatchBoard & (tmp >> 7)
-    tmp |= allSideWatchBoard & (tmp >> 7)
-    legalBoard |= blankBoard & (tmp >> 7)
+    // //左斜め下
+    // tmp = allSideWatchBoard & (playerBoard >> 7)
+    // tmp |= allSideWatchBoard & (tmp >> 7)
+    // tmp |= allSideWatchBoard & (tmp >> 7)
+    // tmp |= allSideWatchBoard & (tmp >> 7)
+    // tmp |= allSideWatchBoard & (tmp >> 7)
+    // tmp |= allSideWatchBoard & (tmp >> 7)
+    // legalBoard |= blankBoard & (tmp >> 7)
 
-    legalBoard
+    // legalBoard
 
+    val mask = opponentBoard & ULong(0x7e7e7e7e7e7e7e7eL)
+    val horizontal: Future[ULong] = Future {
+      get_some_moves(playerBoard, mask, 1)
+    }
+    val vertical: Future[ULong] = Future {
+      get_some_moves(playerBoard, opponentBoard, 8)
+    }
+    val diagonals_1: Future[ULong] = Future {
+      get_some_moves(playerBoard, mask, 7)
+    }
+    val diagonals_2: Future[ULong] = Future {
+      get_some_moves(playerBoard, mask, 9)
+    }
+    val emptyMask = ~(playerBoard | opponentBoard)
+    (Await.result(
+      horizontal,
+      Duration.Inf
+    ) | Await.result(vertical, Duration.Inf) | Await.result(
+      diagonals_1,
+      Duration.Inf
+    ) | Await.result(diagonals_2, Duration.Inf)) & emptyMask
   }
 
   // board の pos に player が石を置いた結果、得られる状態を返す
@@ -812,7 +863,7 @@ object OthelloMain extends App {
   // playLoop(newGame, minimax(countDiff, 4), minimax(countDiff, 4))
 
   // 黒, 白ともに深さ4の alpha-beta 法
-  playLoop(newGame, alphabeta(countDiff, 8), alphabeta(countDiff, 6))
+  playLoop(newGame, alphabeta(countDiff, 5), alphabeta(countDiff, 5))
 }
 
 // 5. 実験結果
