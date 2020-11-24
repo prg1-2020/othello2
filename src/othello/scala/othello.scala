@@ -13,10 +13,6 @@ import scala.math.max
 import scala.math.min
 import spire.math.ULong
 import spire.math.UByte
-import scala.concurrent._
-import scala.concurrent.Future
-import scala.concurrent.ExecutionContext.Implicits.global
-import concurrent.duration.Duration
 
 object OthelloLib {
   // マス目
@@ -237,18 +233,6 @@ object OthelloLib {
 
   // 盤面の描画
   def drawBoard(board: Board): Unit = {
-
-    // def drawRow(row: List[Square]): Unit = {
-    //   row match {
-    //     case Nil     => printf("\n")
-    //     case s :: ss => printf("%s ", squareToString(s)); drawRow(ss)
-    //   }
-    // }
-
-    // board match {
-    //   case Nil     => printf("\n"); printf("---------------\n")
-    //   case r :: rs => drawRow(r); drawBoard(rs)
-    // }
     for (i <- 0 to 7) {
       for (j <- 0 to 7) {
         var (black, white) = board
@@ -268,10 +252,6 @@ object OthelloLib {
   // ゲームオーバかどうかを判定する
   def gameOver(game: Game): Boolean = {
     val (board, player) = game
-    // !(posList.foldRight(false)((p, b) => b || outflanks(board, player, p)) ||
-    //   posList.foldRight(false)((p, b) =>
-    //     b || outflanks(board, opponent(player), p)
-    //   ))
     (validMoves(board, player) == ULong(0)) && (validMoves(
       board,
       opponent(player)
@@ -302,40 +282,6 @@ object OthelloLib {
         case _ => ULong(0)
       }
     }
-    // // Position の足し算
-    // def posPlus(pos: Position, x: Int, y: Int): Position = {
-    //   val (x0, y0) = pos
-    //   (x0 + x, y0 + y)
-    // }
-
-    // // pos から (x, y) 方向に向かって反転する点を探す
-    // def trim(pos: Position, x: Int, y: Int): Long = {
-
-    //   def trimAux(
-    //       pos: Position,
-    //       x: Int,
-    //       y: Int,
-    //       list: List[Position]
-    //   ): List[Position] = {
-    //     val nextPos = posPlus(pos, x, y)
-    //     nextPos match {
-    //       case (nextx, nexty) =>
-    //         if ((nextx < 1) || (nextx > 8) || (nexty < 1) || (nexty > 8)) Nil
-    //         else if (boardRef(board, nextPos) == Empty) Nil
-    //         else if (boardRef(board, nextPos) == player) list
-    //         else trimAux(nextPos, x, y, nextPos :: list)
-    //     }
-    //   }
-
-    //   trimAux(pos, x, y, Nil)
-    // }
-
-    // trim(pos, 0, 1) ++ trim(pos, 1, 1) ++ trim(pos, 1, 0) ++ trim(pos, 1, -1) ++
-    //   trim(pos, 0, -1) ++ trim(pos, -1, -1) ++ trim(pos, -1, 0) ++ trim(
-    //     pos,
-    //     -1,
-    //     1
-    //   )
     val (black, white) = board
     val (playerBoard, opponentBoard) =
       if (player == Black) (black, white) else (white, black)
@@ -374,195 +320,22 @@ object OthelloLib {
 
   // player が石を置ける board 上の座標のリストを返す
   def validMoves(board: Board, player: Player): ULong = {
-    // def valid(playerBoard: ULong, opponentBoard: ULong): ULong = {
-    //   var returnBoard = ULong(0)
-    //   for (i <- 0 to 7) {
-    //     var playerByte = new UByte((playerBoard >> ((7 - i) * 8)).toByte)
-    //     var opponentByte = new UByte((opponentBoard >> ((7 - i) * 8)).toByte)
-    //     var mask = playerByte << 1
-    //     var ans = (~(mask | opponentByte)) & (mask + opponentByte)
-    //     returnBoard = returnBoard | ULong(ans.toLong) << ((7 - i) * 8)
-
-    //     playerByte = reverseByte(playerByte)
-    //     opponentByte = reverseByte(opponentByte)
-    //     mask = playerByte << 1
-    //     ans = reverseByte((~(mask | opponentByte)) & (mask + opponentByte))
-    //     returnBoard = returnBoard | ULong(ans.toLong) << ((7 - i) * 8)
-    //   }
-    //   returnBoard
-    // }
-    // val (black, white) = board
-    // var (playerBoard, opponentBoard) =
-    //   if (player == Black) (black, white) else (white, black)
-    // var validBoard = ULong(0)
-    // validBoard = validBoard | valid(playerBoard, opponentBoard)
-    // validBoard =
-    //   validBoard | valid(transpose(playerBoard), transpose(opponentBoard))
-
-    // validBoard
-
-    // posList
-    //   .filter(outflanks(board, player, _))
-    //   .filter(boardRef(board, _) == Empty)
 
     val (black, white) = board
     val (playerBoard, opponentBoard) =
       if (player == Black) (black, white) else (white, black)
 
-    // //左右端の番人
-    // val horizontalWatchBoard: ULong = opponentBoard & ULong(0x7e7e7e7e7e7e7e7eL)
-    // //上下端の番人
-    // val verticalWatchBoard: ULong = opponentBoard & ULong(0x00ffffffffffff00L)
-    // //全辺の番人
-    // val allSideWatchBoard: ULong = opponentBoard & ULong(0x007e7e7e7e7e7e00L)
-    // //空きマスのみにビットが立っているボード
-    // val blankBoard: ULong = ~(playerBoard | opponentBoard)
-    // //隣に相手の色があるかを一時保存する
-    // var tmp: ULong = ULong(0)
-    // //返り値
-    // var legalBoard: ULong = ULong(0)
-
-    // tmp = horizontalWatchBoard & (playerBoard << 1)
-    // tmp |= horizontalWatchBoard & (tmp << 1)
-    // tmp |= horizontalWatchBoard & (tmp << 1)
-    // tmp |= horizontalWatchBoard & (tmp << 1)
-    // tmp |= horizontalWatchBoard & (tmp << 1)
-    // tmp |= horizontalWatchBoard & (tmp << 1)
-    // legalBoard = blankBoard & (tmp << 1)
-
-    // //右
-    // tmp = horizontalWatchBoard & (playerBoard >> 1)
-    // tmp |= horizontalWatchBoard & (tmp >> 1)
-    // tmp |= horizontalWatchBoard & (tmp >> 1)
-    // tmp |= horizontalWatchBoard & (tmp >> 1)
-    // tmp |= horizontalWatchBoard & (tmp >> 1)
-    // tmp |= horizontalWatchBoard & (tmp >> 1)
-    // legalBoard |= blankBoard & (tmp >> 1)
-
-    // //上
-    // tmp = verticalWatchBoard & (playerBoard << 8)
-    // tmp |= verticalWatchBoard & (tmp << 8)
-    // tmp |= verticalWatchBoard & (tmp << 8)
-    // tmp |= verticalWatchBoard & (tmp << 8)
-    // tmp |= verticalWatchBoard & (tmp << 8)
-    // tmp |= verticalWatchBoard & (tmp << 8)
-    // legalBoard |= blankBoard & (tmp << 8)
-
-    // //下
-    // tmp = verticalWatchBoard & (playerBoard >> 8)
-    // tmp |= verticalWatchBoard & (tmp >> 8)
-    // tmp |= verticalWatchBoard & (tmp >> 8)
-    // tmp |= verticalWatchBoard & (tmp >> 8)
-    // tmp |= verticalWatchBoard & (tmp >> 8)
-    // tmp |= verticalWatchBoard & (tmp >> 8)
-    // legalBoard |= blankBoard & (tmp >> 8)
-
-    // //右斜め上
-    // tmp = allSideWatchBoard & (playerBoard << 7)
-    // tmp |= allSideWatchBoard & (tmp << 7)
-    // tmp |= allSideWatchBoard & (tmp << 7)
-    // tmp |= allSideWatchBoard & (tmp << 7)
-    // tmp |= allSideWatchBoard & (tmp << 7)
-    // tmp |= allSideWatchBoard & (tmp << 7)
-    // legalBoard |= blankBoard & (tmp << 7)
-
-    // //左斜め上
-    // tmp = allSideWatchBoard & (playerBoard << 9)
-    // tmp |= allSideWatchBoard & (tmp << 9)
-    // tmp |= allSideWatchBoard & (tmp << 9)
-    // tmp |= allSideWatchBoard & (tmp << 9)
-    // tmp |= allSideWatchBoard & (tmp << 9)
-    // tmp |= allSideWatchBoard & (tmp << 9)
-    // legalBoard |= blankBoard & (tmp << 9)
-
-    // //右斜め下
-    // tmp = allSideWatchBoard & (playerBoard >> 9)
-    // tmp |= allSideWatchBoard & (tmp >> 9)
-    // tmp |= allSideWatchBoard & (tmp >> 9)
-    // tmp |= allSideWatchBoard & (tmp >> 9)
-    // tmp |= allSideWatchBoard & (tmp >> 9)
-    // tmp |= allSideWatchBoard & (tmp >> 9)
-    // legalBoard |= blankBoard & (tmp >> 9)
-
-    // //左斜め下
-    // tmp = allSideWatchBoard & (playerBoard >> 7)
-    // tmp |= allSideWatchBoard & (tmp >> 7)
-    // tmp |= allSideWatchBoard & (tmp >> 7)
-    // tmp |= allSideWatchBoard & (tmp >> 7)
-    // tmp |= allSideWatchBoard & (tmp >> 7)
-    // tmp |= allSideWatchBoard & (tmp >> 7)
-    // legalBoard |= blankBoard & (tmp >> 7)
-
-    // legalBoard
-
     val mask = opponentBoard & ULong(0x7e7e7e7e7e7e7e7eL)
-    val horizontal: Future[ULong] = Future {
-      get_some_moves(playerBoard, mask, 1)
-    }
-    val vertical: Future[ULong] = Future {
-      get_some_moves(playerBoard, opponentBoard, 8)
-    }
-    val diagonals_1: Future[ULong] = Future {
-      get_some_moves(playerBoard, mask, 7)
-    }
-    val diagonals_2: Future[ULong] = Future {
-      get_some_moves(playerBoard, mask, 9)
-    }
+    val horizontal = get_some_moves(playerBoard, mask, 1)
+    val vertical = get_some_moves(playerBoard, opponentBoard, 8)
+    val diagonals_1 = get_some_moves(playerBoard, mask, 7)
+    val diagonals_2 = get_some_moves(playerBoard, mask, 9)
     val emptyMask = ~(playerBoard | opponentBoard)
-    (Await.result(
-      horizontal,
-      Duration.Inf
-    ) | Await.result(vertical, Duration.Inf) | Await.result(
-      diagonals_1,
-      Duration.Inf
-    ) | Await.result(diagonals_2, Duration.Inf)) & emptyMask
+    (horizontal | vertical | diagonals_1 | diagonals_2) & emptyMask
   }
 
   // board の pos に player が石を置いた結果、得られる状態を返す
   def applyMove(board: Board, player: Player, pos: Position): Game = {
-
-    // // 行数の分だけ makeRow を行い、その結果を使って盤面を作る
-    // def makeBoard(board: Board, flipList: List[Position], y: Int): Board = {
-    //   board match {
-    //     case Nil     => Nil
-    //     case r :: rs =>
-    //       // y 行目の座標のうち、色が反転するもののリスト
-    //       val flipListY =
-    //         flipList.filter(p => p match { case (px, py) => py == y })
-    //       makeRow(r, flipListY, 1, y) :: makeBoard(rs, flipList, y + 1)
-    //   }
-    // }
-
-    // // 反転後の行を作る
-    // def makeRow(
-    //     row: List[Square],
-    //     flipListY: List[Position],
-    //     x: Int,
-    //     y: Int
-    // ): List[Square] = {
-    //   row match {
-    //     case Nil => Nil
-    //     case square :: squares => {
-    //       val newSquare =
-    //         // 反転リストに入っている座標は player
-    //         if (contain(x, flipListY)) player
-    //         // player が石を置く場所は player
-    //         else if (pos == (x, y)) player
-    //         // それ以外はそのまま
-    //         else square
-    //       newSquare :: makeRow(squares, flipListY, x + 1, y)
-    //     }
-    //   }
-    // }
-
-    // // (x, y) が flipListY に含まれるかを判定
-    // def contain(x: Int, flipListY: List[Position]): Boolean = {
-    //   flipListY match {
-    //     case Nil            => false
-    //     case (px, py) :: ps => if (px == x) true else contain(x, ps)
-    //   }
-    // }
-
     if (!(outflanks(board, player, pos))) {
       throw new Exception("not a valid move")
     } else {
