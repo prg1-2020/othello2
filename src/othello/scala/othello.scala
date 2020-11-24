@@ -255,8 +255,8 @@ object OthelloLib {
   def playLoop(game: Game, strat1: Strategy, strat2: Strategy): Game = {
     val (board, player) = game
     if (gameOver(game)) {
-      val blackscore = countPieces(board, Black)
-      val whitescore = countPieces(board, White)
+      val blackscore = countPieces((board, Black))
+      val whitescore = countPieces((board, White))
       val winner =
         if (blackscore > whitescore) "Black"
         else if (whitescore > blackscore) "White"
@@ -275,12 +275,114 @@ object OthelloLib {
   //////////////////
   // オリジナルの戦略 //
   //////////////////
+  def flipped(game: Game): Game = {
+    val (board, player) = game
+    (board.map(
+      _.map(
+        _ match {
+          case Empty => Empty
+          case Black => White
+          case White => Black
+        }
+      )
+    ), opponent(player))
+  }
 
+  def evaluate(game: Game): Int = {
+    val (board, player) = game
+    assert(player == Black)
+
+    val bc = countPieces((board, Black))
+    val wc = countPieces((board, White))
+    if (bc == 0) {
+      -10000
+    }
+    else if (wc == 0) {
+      10000
+    }
+    else {
+      val stone = bc - wc
+      val moves = validMoves(board, Black).length - validMoves(board, White).length
+      val c = min(16, (64 - bc - wc))
+      stone * (16 - c) + moves * c
+    }
+  }
+
+  def abeval(game: Game, depth: Int, lower: Int, upper: Int): Int = {
+    val (board, player) = game
+    assert(player == Black)
+
+    if (gameOver(game) || depth == 0) {
+      return evaluate(game)
+    }
+
+    val moves = validMoves(board, Black)
+    val next = if (moves.isEmpty) {
+      List(flipped((board, White)))
+    } else {
+      moves.map(pos => {
+        val b = flipped(applyMove(board, Black, pos))
+        (b, -evaluate(b))
+      }).sortWith(_._2 > _._2).map(_._1)
+    }
+    
+    def helper(list: List[Game], acc: Int): Int = {
+      list match {
+        case Nil => acc
+        case x :: xs => {
+          val estimate = -abeval(x, depth - 1, -upper, -acc)
+          if (estimate >= upper) upper
+          else helper(xs, max(acc, estimate))
+        }
+      }
+    }
+
+    helper(next, lower)
+  }
+
+  def myStrategy: Strategy = {
+    game_ => {
+      val start = System.currentTimeMillis
+
+      val game = if (game_._2 == Black) game_ else flipped(game_)
+      val (board, player) = game
+      assert(player == Black)
+
+      val moves = validMoves(board, Black)
+      val next = 
+        moves.map(pos => {
+          val b = flipped(applyMove(board, Black, pos))
+          ((pos, b), -evaluate(b))
+        }).sortWith(_._2 > _._2).map(_._1)
+      
+      def iterate(depth: Int): Position = {
+        def helper(list: List[(Position, Game)], acc: Int, arg: Position): Position = {
+          list match {
+            case Nil => arg
+            case (pos, g) :: xs => {
+              val estimate = -abeval(g, depth - 1, -Int.MaxValue, -acc)
+              if (estimate > acc) helper(xs, estimate, pos)
+              else helper(xs, acc, arg)
+            }
+          }
+        }
+        val pos = helper(next, -Int.MaxValue, (1, 1))
+        val end = System.currentTimeMillis
+        if (end - start > 2000) {
+          pos
+        } else {
+          iterate(depth + 1)
+        }
+      }
+
+      iterate(1)
+    }
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, randomMove, myStrategy)
 }
