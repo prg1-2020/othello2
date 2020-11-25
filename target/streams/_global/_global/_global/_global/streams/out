@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0mTerminating watch due to invalid command(s): 'Expected ';'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: runMain[0m
+[0m[[0m[31merror[0m] [0m[0mExpected whitespace character[0m
+[0m[[0m[31merror[0m] [0m[0mrunMain[0m
+[0m[[0m[31merror[0m] [0m[0m       ^'[0m

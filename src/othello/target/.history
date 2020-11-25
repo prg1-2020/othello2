@@ -1,0 +1,52 @@
+runrunMain Mab
+run
+runrunMain 
+runMain OthelloMain 
+run OthelloMain 
+run Mab
+~run Mab
+~runMain Mab
+run Mab
+~runMain Mab
+run Mab
+~runMain Mab
+run Mab
+~runMain Mab
+~run Mab
+~runMain Mab
+compile
+run
+~runMain
+run
+~runMain
+run
+~runMain
+run
+~runMain
+run
+console
+run
+console
+run
+compile/run
+Compile / run
+console
+run
+console
+run
+console
+run
+console
+compile
+console
+run
+console
+run
+console
+run
+console
+run
+console
+run
+console
+run
