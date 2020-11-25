@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala:215:7: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: (Nil, 0), (Nil, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m      (list, n) match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

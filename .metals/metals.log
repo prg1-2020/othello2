@@ -1,0 +1,101 @@
+2020.11.17 14:35:10 INFO  Started: Metals version 0.9.5 in workspace '/Users/endoutomohiro/Documents/GitHub/othello2' for client vscode.
+2020.11.17 14:35:14 INFO  time: initialize in 3.68s
+2020.11.17 14:35:15 WARN  Build server is not auto-connectable.
+2020.11.17 14:35:15 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 14:35:22 INFO  no build target: using presentation compiler with only scala-library
+2020.11.17 14:37:35 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 14:37:35 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 14:54:21 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:20:36 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:21:08 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+11月 17, 2020 3:21:32 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 179
+2020.11.17 15:28:27 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:31 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:32:39 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:42 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:44 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:44 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:46 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:48 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:50 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:50 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:53 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:55 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:57 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:32:58 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:00 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:03 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:05 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:05 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:17 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:17 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:24 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:24 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:25 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:25 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:27 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:29 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:31 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:33 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:37 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:40 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:40 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:33:42 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:34:22 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:34:40 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:35:17 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:36:52 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:37:33 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:37:33 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:37:45 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:38:15 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:38:29 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+11月 17, 2020 3:39:09 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 2291
+2020.11.17 15:40:05 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:40:44 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:41:51 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:43:03 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:43:15 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:43:29 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:44:02 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:46:33 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:47:12 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:49:28 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:49:28 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:49:44 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:49:51 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:50:00 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:50:09 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:50:50 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:51:38 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:51:38 WARN  code navigation does not work for the file '/Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.17 15:52:12 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:52:18 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:52:45 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:52:51 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:53:00 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:54:07 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:54:22 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:56:39 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:57:08 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.17 15:58:02 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.20 20:00:23 INFO  shutting down Metals
+2020.11.20 20:01:03 INFO  Started: Metals version 0.9.5 in workspace '/Users/endoutomohiro/Documents/GitHub/othello2' for client vscode.
+2020.11.20 20:01:08 INFO  time: initialize in 5.25s
+2020.11.20 20:01:09 WARN  Build server is not auto-connectable.
+2020.11.20 20:01:09 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.20 20:01:10 INFO  skipping build import with status 'Dismissed'
+2020.11.20 20:01:15 INFO  no build target: using presentation compiler with only scala-library
+2020.11.21 11:11:31 INFO  shutting down Metals
+2020.11.22 20:59:56 INFO  Started: Metals version 0.9.5 in workspace '/Users/endoutomohiro/Documents/GitHub/othello2' for client vscode.
+2020.11.22 20:59:59 INFO  time: initialize in 3.01s
+2020.11.22 21:00:00 WARN  Build server is not auto-connectable.
+2020.11.22 21:00:00 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.22 21:00:01 INFO  skipping build import with status 'Dismissed'
+2020.11.22 21:00:07 INFO  no build target: using presentation compiler with only scala-library
+2020.11.25 22:35:09 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+2020.11.25 22:35:12 WARN  no build target for: /Users/endoutomohiro/Documents/GitHub/othello2/src/othello/scala/othello.scala
+11月 25, 2020 10:36:01 午後 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTraceNotification
