@@ -11,7 +11,6 @@ package othello
 
 import scala.math.max
 import scala.math.min
-import scala.math.random
 
 object OthelloLib {
 
@@ -83,6 +82,138 @@ object OthelloLib {
   def countPieces(game: Game): Int = {
     val (board, player) = game
     board.foldRight(0)((row, r) => row.foldRight(0)((s, r) => if (s == player) r + 1 else r) + r)
+  }
+
+  def countP(arBoard: Array[Array[Square]], player: Player): (Int,Int) = {
+    var cM = 0
+    var cO = 0
+    val oppo = opponent(player)
+
+    for(i <- 0 until 8){
+      for(j <- 0 until 8){
+        if(arBoard(i)(j) == player) cM+=1
+        else if(arBoard(i)(j) == oppo) cO += 1
+      }
+    }
+
+    (cM, cO)
+  }
+
+  def printArBoard(arBoard: Array[Array[Square]]){
+    
+    for(i <- 0 until 8){
+      for(j <- 0 until 8){
+        printf("%s ", squareToString(arBoard(i)(j)))
+      }
+      printf("\n")
+    }
+    printf("---------------\n")
+  }
+
+  def countFreedom(arBoard: Array[Array[Square]], player: Player) : (Int,Int) = {
+    var fM = 0
+    var fO = 0
+    var dir = Array((-1,-1), (-1,0), (-1,1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
+
+    for(i <- 0 until 8){
+      for(j <- 0 until 8){
+        val now = arBoard(i)(j)
+        if(now != Empty){
+          dir.foreach(d => {
+            val a = i + d._1
+            val b = j + d._2
+            if(a >= 0 && a <= 7 && b >= 0 && b <= 7 && arBoard(a)(b) == Empty){
+              if(player == now) fM += 1
+              else fO += 1
+            }
+          })
+        }
+      }
+    }
+    (fM, fO)
+  }
+
+  def countSettle(arBoard: Array[Array[Square]], player: Player): (Int,Int) = {
+    var kakuBoard:Array[Array[Square]] =
+    Array(Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty),
+         Array(Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty))
+
+    var cM = 0
+    var cO = 0
+    
+
+    for(i <- 0 until 8){
+      for(j <- 0 until 8){
+        val now = arBoard(i)(j)
+        if(now != Empty && kakuBoard(i)(j) == Empty){
+          val oppo = if(now == White) Black else White
+
+          var u:Square = if(i == 0 || kakuBoard(i-1)(j) == now) now 
+                          else if(kakuBoard(i-1)(j) == Empty) Empty
+                          else oppo
+          var l:Square = if(j == 0 || kakuBoard(i)(j-1) == now) now 
+                          else if(kakuBoard(i)(j-1) == Empty) Empty
+                          else oppo
+          var d:Square = if(i == 7 || kakuBoard(i+1)(j) == now) now 
+                          else if(kakuBoard(i+1)(j) == Empty) Empty
+                          else oppo
+          var r:Square = if(j == 7 || kakuBoard(i)(j+1) == now) now 
+                          else if(kakuBoard(i)(j+1) == Empty) Empty
+                          else oppo
+          if((u==now || d==now || (u != Empty && d != Empty)) && (l==now || r==now || (l != Empty && r != Empty))){
+            kakuBoard(i)(j) = now
+            if(now == player) cM+=1
+            else cO +=1
+          }
+        }
+      }
+    }
+
+    for(i <- 7 to 0 by -1){
+      for(j <- 7 to 0 by -1){
+        val now = arBoard(i)(j)
+        if(now != Empty && kakuBoard(i)(j) == Empty){
+          val oppo = if(now == White) Black else White
+          var u:Square = if(i == 0 || kakuBoard(i-1)(j) == now) now 
+                          else if(kakuBoard(i-1)(j) == Empty) Empty
+                          else oppo
+          var l:Square = if(j == 0 || kakuBoard(i)(j-1) == now) now 
+                          else if(kakuBoard(i)(j-1) == Empty) Empty
+                          else oppo
+          var d:Square = if(i == 7 || kakuBoard(i+1)(j) == now) now 
+                          else if(kakuBoard(i+1)(j) == Empty) Empty
+                          else oppo
+          var r:Square = if(j == 7 || kakuBoard(i)(j+1) == now) now 
+                          else if(kakuBoard(i)(j+1) == Empty) Empty
+                          else oppo
+          if((u==now || d==now || (u != Empty && d != Empty)) && (l==now || r==now || (l != Empty && r != Empty))){
+            kakuBoard(i)(j) = now
+            if(now == player) cM+=1
+            else cO +=1
+          }
+        }
+      }
+    }
+
+      // printArBoard(kakuBoard)
+      // printf("%d %d", cM,cO)
+    (cM, cO)
+  }
+
+  def countCand(game: Game): Int = {
+    val (board, player) = game
+    posList.foldLeft(0)(
+      (c, p) => {
+        if(outflanks(board, player, p)) c + 1
+        else c
+      }
+    )
   }
 
   // マス目の中身を文字列に変換する
@@ -208,28 +339,82 @@ object OthelloLib {
   // 戦略
   type Strategy = Game => Position
 
-  // ランダムに手を選ぶ
-  def randomMove: Strategy = {
+  // posList を前から順番に見ていき、可能な手を見つける
+  def firstMove(game: Game): Position = {
 
-    def nth[A](list: List[A], n: Int): A = {
-      (list, n) match {
-        case (a :: as, 0) => a
-        case (a :: as, n) => nth(as, n - 1)
+    def firstMoveAux(list: List[Position]): Position = {
+      val (board, player) = game
+      list match {
+        case Nil => throw new Exception("no valid move")
+        case p :: ps => if (outflanks(board, player, p)) p else firstMoveAux(ps)
       }
     }
 
+    firstMoveAux(posList)
+  }
+
+  // 人間のキー入力を受け取る
+  def human: Strategy = {
     game =>
       val (board, player) = game
-      val positions = validMoves(board, player)
-      nth(positions, (random() * positions.length).toInt)
-    }
+      val strMove = io.StdIn.readLine().split(' ')
+      val move = (strMove(0).toInt, strMove(1).toInt)
+      if (!(outflanks(board, player, move))) {
+        println("Not a valid move! Please try again.");
+        human(game)
+      }
+      else move
+  }
 
   // ヒューリスティック
   type Heuristic = Game => Int
 
   // 黒 - 白 の値を返す
   def countDiff: Heuristic = {
-    game => countPieces(game._1, Black) - countPieces(game._1, White)
+    game => {
+      val (board, player) = game
+      countPieces(board, player) - countPieces(board, opponent(player))
+    }
+  }
+
+  def convAr(board:Board):Array[Array[Square]] = {
+
+      var arBoard = Array.ofDim[Square](8,8)
+      var i = 0
+      var j = 0
+      board.foreach(r => {
+        r.foreach(p => {
+          arBoard(i)(j) = p
+          j += 1
+        })
+        j = 0
+        i += 1
+      }) 
+      arBoard
+  }
+
+  def staticEval(sCoeff:Float, cCoeff:Float, kCoeff:Float, iCoeff:Float): Heuristic = {
+    game => {
+      val (board, player) = game
+
+      var arBoard = convAr(board)
+
+      val (isim,isio) = countP(arBoard, player)
+      val isi = isim - isio
+      if(isim +isio == 64 || isim == 0 || isio == 0){
+        if(isim < isio) -30000
+        else 30000
+      }
+      else {
+      // if(64 - isim + isio <= 6) isi
+      // else {
+      val (kM,kO) = countFreedom(arBoard, player)
+      val cand = countCand(game) - countCand((board, opponent(player)))
+      val (sM,sO) = countSettle(arBoard, player)
+      ((sM - sO) * sCoeff  + cand * cCoeff + (kM - kO) * kCoeff  + isi * iCoeff).toInt
+      // }
+      }
+    }
   }
 
   // 戦略の適用
@@ -267,20 +452,121 @@ object OthelloLib {
     }
     else {
       drawBoard(board);
+
+      val arBoard = convAr(board)
+      val s=countSettle(arBoard, Black)
+      val f=countFreedom(arBoard, Black)
+      printf("s:%d,%d k:%d,%d\n",s._1,s._2, f._1, f._2)
+
       val newgame = applyStrategy(game, strat1)
       playLoop(newgame, strat2, strat1)
     }
   }
 
-  //////////////////
-  // オリジナルの戦略 //
-  //////////////////
+  /////////
+  // 課題 //
+  /////////
 
+  // 1. minimaxEval
+  // 目的：
+  def minimaxEval(heuristic: Heuristic, depth: Int, game: Game): Int = {
+    val (board, player) = game
+    val oppo = if(player == Black) White else Black
+
+    if(depth == 0) {
+      heuristic(game)
+    } else {
+      val (s,p) = posList.foldLeft((-1000, (-1,-1):Position))(
+        (s, p) => {
+          val (cMax, cHand) = s
+          if(outflanks(board, player, p)) {
+            val cs = -minimaxEval(heuristic, depth - 1, applyMove(board, player, p))
+            if(cs > cMax) (cs, p)
+            else s
+          }
+          else s
+        }
+      )
+
+      if(s == -1000) {
+        return -minimaxEval(heuristic, depth - 1, (board, oppo))
+      } else {
+        s
+      }
+    }
+  }
+
+  // 2. minimax
+  // 目的：
+  def minimax(heuristic: Heuristic, depth: Int): Strategy = {
+    game => {
+      val (board, player) = game
+      posList.foldLeft((-1000, (-1,-1):Position))(
+        (s, p) => {
+          val (cMax, cHand) = s
+          if(outflanks(board, player, p)) {
+            val cs = -minimaxEval(heuristic, depth, applyMove(board, player, p))
+            if(cs > cMax) (cs, p)
+            else s
+          }
+          else s
+        }
+      )._2
+    }
+  }
+
+  // 3. alphabetaEval
+  // 目的：
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val (board, player) = game
+    val oppo = if(player == Black) White else Black
+
+    if(depth == 0) {
+      heuristic(game)
+    } else {
+      val (s,p) = posList.foldLeft((-100000, (-1,-1):Position))(
+        (s, p) => {
+          val (cMax, cHand) = s
+          if(cMax < b && outflanks(board, player, p)) {
+            val cs = -alphabetaEval(heuristic, depth - 1, -b, -max(a,cMax), applyMove(board, player, p))
+            if(cs > cMax) (cs, p)
+            else s
+          }
+          else s
+        }
+      )
+
+      if(s == -100000) {
+        return -alphabetaEval(heuristic, depth - 1, -b, -a, (board, oppo))
+      } else {
+        s
+      }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>{
+      val (board, player) = game
+      posList.foldLeft((-100000, (-1,-1):Position))(
+        (s, p) => {
+          val (cMax, cHand) = s
+          if(outflanks(board, player, p)) {
+            val cs = -alphabetaEval(heuristic, depth, -10000, -cMax, applyMove(board, player, p))
+            // assert(minimaxEval(heuristic, depth, applyMove(board, player, p)) == alphabetaEval(heuristic, depth, -1000, 1000, applyMove(board, player, p)))
+            if(cs > cMax) (cs, p)
+            else s
+          }
+          else s
+        }
+      )._2
+    }
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
-  // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(staticEval(15,6,-4,1), 8),firstMove)
 }

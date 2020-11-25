@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/akihiro/repos/othello2/src/othello/scala/othello.scala:102:50: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `printArBoard`'s return type[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m  def printArBoard(arBoard: Array[Array[Square]]){[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m[0J
