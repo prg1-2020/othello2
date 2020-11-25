@@ -276,11 +276,202 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+
+  // 盤面の評価値を返す
+  def countGame: Heuristic = {
+    game => {
+      val (board, player) = game
+      var sub = countPieces(game._1, Black) - countPieces(game._1, White)
+      if (boardRef(board, (1, 2)) == player) {
+        if (boardRef(board, (1, 1)) == player) sub += 5
+        else if (boardRef(board, (1, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (1, 7)) == player) {
+        if (boardRef(board, (1, 8)) == player) sub += 5
+        else if (boardRef(board, (1, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (2, 1)) == player) {
+        if (boardRef(board, (1, 1)) == player) sub += 5
+        else if (boardRef(board, (1, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (2, 2)) == player) {
+        if (boardRef(board, (1, 1)) == player) sub += 5
+        else if (boardRef(board, (1, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (2, 3)) == player) sub += 3
+      if (boardRef(board, (2, 4)) == player) sub += 3
+      if (boardRef(board, (2, 5)) == player) sub += 3
+      if (boardRef(board, (2, 6)) == player) sub += 3
+      if (boardRef(board, (2, 7)) == player) {
+        if (boardRef(board, (1, 8)) == player) sub += 5
+        else if (boardRef(board, (1, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (2, 8)) == player) {
+        if (boardRef(board, (1, 8)) == player) sub += 5
+        else if (boardRef(board, (1, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (3, 2)) == player) sub += 3
+      if (boardRef(board, (3, 7)) == player) sub += 3
+      if (boardRef(board, (4, 2)) == player) sub += 3
+      if (boardRef(board, (4, 7)) == player) sub += 3
+      if (boardRef(board, (5, 2)) == player) sub += 3
+      if (boardRef(board, (5, 7)) == player) sub += 3
+      if (boardRef(board, (6, 2)) == player) sub += 3
+      if (boardRef(board, (6, 7)) == player) sub += 3
+      if (boardRef(board, (7, 1)) == player) {
+        if (boardRef(board, (8, 1)) == player) sub += 5
+        else if (boardRef(board, (8, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (7, 2)) == player) {
+        if (boardRef(board, (8, 1)) == player) sub += 5
+        else if (boardRef(board, (8, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (7, 3)) == player) sub += 3
+      if (boardRef(board, (7, 4)) == player) sub += 3
+      if (boardRef(board, (7, 5)) == player) sub += 3
+      if (boardRef(board, (7, 6)) == player) sub += 3
+      if (boardRef(board, (7, 7)) == player) {
+        if (boardRef(board, (8, 8)) == player) sub += 5
+        else if (boardRef(board, (8, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (7, 8)) == player) {
+        if (boardRef(board, (8, 8)) == player) sub += 5
+        else if (boardRef(board, (8, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (8, 2)) == player) {
+        if (boardRef(board, (8, 1)) == player) sub += 5
+        else if (boardRef(board, (8, 1)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+      if (boardRef(board, (8, 7)) == player) {
+        if (boardRef(board, (8, 8)) == player) sub += 5
+        else if (boardRef(board, (8, 8)) == opponent(player)) sub -= 5
+        else sub -= 3
+      }
+
+      if (boardRef(board, (1, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (1, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 1)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 3)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 4)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 5)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 6)) == opponent(player)) sub -= 3
+      if (boardRef(board, (2, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (3, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (3, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (4, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (4, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (5, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (5, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (6, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 1)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 3)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 4)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 5)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 6)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 7)) == opponent(player)) sub -= 3
+      if (boardRef(board, (7, 8)) == opponent(player)) sub -= 3
+      if (boardRef(board, (8, 2)) == opponent(player)) sub -= 3
+      if (boardRef(board, (8, 7)) == opponent(player)) sub -= 3
+
+      if (boardRef(board, (1, 1)) == player) sub += 50
+      if (boardRef(board, (1, 8)) == player) sub += 50
+      if (boardRef(board, (8, 1)) == player) sub += 50
+      if (boardRef(board, (8, 8)) == player) sub += 50
+
+      if (boardRef(board, (1, 1)) == opponent(player)) sub -= 50
+      if (boardRef(board, (1, 8)) == opponent(player)) sub -= 50
+      if (boardRef(board, (8, 1)) == opponent(player)) sub -= 50
+      if (boardRef(board, (8, 8)) == opponent(player)) sub -= 50
+
+      sub
+    }
+
+
+  }
+
+
+  // 3. alphabetaEval
+  // 目的：alpha-beta法に基づいてゲームの状態を評価する
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val (board, player) = game
+    if (depth == 0) countGame(game)
+    else if (gameOver(game)) countGame(game)
+    else if (validMoves(board, player) == Nil) alphabetaEval(heuristic, depth, a, b, (board, opponent(player)))
+    else {
+      player match {
+        case Black => {
+          var v = Int.MinValue
+          var alpha = a
+          for (c <- validMoves(board, player)) {
+            v = max(v, alphabetaEval(heuristic, depth-1, alpha, b, applyMove(board, player, c)))
+            alpha = max(alpha, v)
+            if (alpha >= b) return v
+          }
+          v
+        }
+        case White => {
+          var v = Int.MaxValue
+          var beta = b
+          for (c <- validMoves(board, player)) {
+            v = min(v, alphabetaEval(heuristic, depth-1, a, beta, applyMove(board, player, c)))
+            beta = min(beta, v)
+            if (beta <= a) return v
+          }
+          v
+        }
+      }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：alphabeta法に基づいて最適な手を求める
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game => {
+      val (board, player) = game
+      player match {
+        case Black => {
+          var v = Int.MinValue
+          validMoves(board, player).foldLeft[(Int, Position)]((Int.MinValue, (0, 0)))(
+            (x, pos) => {
+              val posEval = alphabetaEval(heuristic, depth-1, v, Int.MaxValue,  applyMove(board, player, pos))
+              if (x._1 < posEval) (posEval, pos)
+              else x
+            }
+          )._2
+        }
+        case White => {
+          var v = Int.MaxValue
+          validMoves(board, player).foldLeft[(Int, Position)]((Int.MaxValue, (0, 0)))(
+            (x, pos) => {
+              val posEval = alphabetaEval(heuristic, depth-1, Int.MinValue, v, applyMove(board, player, pos))
+              if (x._1 > posEval) (posEval, pos)
+              else x
+            }
+          )._2
+        }
+      }
+    }
+  }
+
+  
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(countGame, 4), randomMove)
 }
