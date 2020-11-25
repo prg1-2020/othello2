@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.13.3":{"hashes":[["/home/matsu-log/classes/prg1/othello2-1/src/othello/scala/othello.scala","729d35be0010b7f5d4e904adfe390159904dab6c"]],"lastModifiedTimes":[]}}]

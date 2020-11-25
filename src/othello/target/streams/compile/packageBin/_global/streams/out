@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/othello_2.13-0.1-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$Empty$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$Empty$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$White$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$White$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$Square.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$Square.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$Black$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$Black$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	othello/OthelloLib$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/matsu-log/classes/prg1/othello2-1/src/othello/target/scala-2.13/classes/othello/OthelloLib$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
