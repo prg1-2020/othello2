@@ -110,11 +110,26 @@ object OthelloLib {
     printf("---------------\n")
   }
 
+  var dir = Array((-1,-1), (-1,0), (-1,1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
+
+  def countValue(arBoard: Array[Array[Square]], player: Player) : (Int,Int) = {
+    var vM = 0
+    var vO = 0
+    val oppo = opponent(player)
+    for(i <- 0 until 8){
+      for(j <- 0 until 8){
+        val now = arBoard(i)(j)
+        if(now == player)
+          vM += positionscore(i)(j)
+        else if(now == oppo)
+          vO += positionscore(i)(j)
+      }
+    }
+    (vM,vO)
+  }
   def countFreedom(arBoard: Array[Array[Square]], player: Player) : (Int,Int) = {
     var fM = 0
     var fO = 0
-    var dir = Array((-1,-1), (-1,0), (-1,1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
-
     for(i <- 0 until 8){
       for(j <- 0 until 8){
         val now = arBoard(i)(j)
@@ -393,7 +408,17 @@ object OthelloLib {
       arBoard
   }
 
-  def staticEval(sCoeff:Float, cCoeff:Float, kCoeff:Float, iCoeff:Float): Heuristic = {
+  val positionscore =
+          Array(Array(30, -12, 0, -1, -1, 0, -12, 30),
+               Array(-12, -15, -3, -3, -3, -3, -15, -12),
+               Array(0, -3, 0, -1, -1, 0, -3, 0),
+               Array(-1, -3, -1, -1, -1, -1, -3, -1),
+               Array(-1, -3, -1, -1, -1, -1, -3, -1),
+               Array(0, -3, 0, -1, -1, 0, -3, 0),
+               Array(-12, -15, -3, -3, -3, -3, -15, -12),
+               Array(30, -12, 0, -1, -1, 0, -12, 30))
+
+  def staticEval(sCoeff:Double, cCoeff:Double, kCoeff:Double, iCoeff:Double, vCoeff:Double): Heuristic = {
     game => {
       val (board, player) = game
 
@@ -411,7 +436,8 @@ object OthelloLib {
       val (kM,kO) = countFreedom(arBoard, player)
       val cand = countCand(game) - countCand((board, opponent(player)))
       val (sM,sO) = countSettle(arBoard, player)
-      ((sM - sO) * sCoeff  + cand * cCoeff + (kM - kO) * kCoeff  + isi * iCoeff).toInt
+      val (vM,vO) = countValue(arBoard, player)
+      ((sM - sO) * sCoeff  + cand * cCoeff + (kM - kO) * kCoeff  + isi * iCoeff + (vM-vO)*vCoeff).toInt
       // }
       }
     }
@@ -515,8 +541,41 @@ object OthelloLib {
     }
   }
 
-  // 3. alphabetaEval
-  // 目的：
+  def moveOrdering(board: Board, player:Player, depth:Int, hands:List[Position]): List[Position] = {
+    // hands.sortBy(h=>(-positionscore(h._1-1)(h._2-1)))
+    if(depth <= 5) hands
+    else {
+      var arBoard = convAr(board)
+      var cBoard = Array.ofDim[Int](8,8)
+      val oppo = opponent(player)
+      for(i <- 0 until 8){
+        for(j <- 0 until 8){
+          val now = arBoard(i)(j)
+          if(now == oppo){
+            dir.foreach(d => {
+              val a = i + d._1
+              val b = j + d._2
+              if(a >= 0 && a <= 7 && b >= 0 && b <= 7 && arBoard(a)(b) == Empty){
+                cBoard(a)(b)+=1
+              }
+            })
+          }
+        }
+      }
+      hands.sortBy(h=>{
+        var sc = 0
+        dir.foreach(d => {
+          val a = h._1-1 + d._1
+          val b = h._2-1 + d._2
+          if(a >= 0 && a <= 7 && b >= 0 && b <= 7 && arBoard(a)(b) == Empty){
+            sc += cBoard(a)(b)
+          }
+        })
+        sc*3 - positionscore(h._1-1)(h._2-1)
+      })
+    }
+  }
+  
   def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
     val (board, player) = game
     val oppo = if(player == Black) White else Black
@@ -524,10 +583,12 @@ object OthelloLib {
     if(depth == 0) {
       heuristic(game)
     } else {
-      val (s,p) = posList.foldLeft((-100000, (-1,-1):Position))(
+      var hands = moveOrdering(board, player,depth, validMoves(board,player))
+      
+      val (s,p) = hands.foldLeft((-100000, (-1,-1):Position))(
         (s, p) => {
           val (cMax, cHand) = s
-          if(cMax < b && outflanks(board, player, p)) {
+          if(cMax < b) {
             val cs = -alphabetaEval(heuristic, depth - 1, -b, -max(a,cMax), applyMove(board, player, p))
             if(cs > cMax) (cs, p)
             else s
@@ -543,13 +604,15 @@ object OthelloLib {
       }
     }
   }
+  
 
   // 4. alphabeta
   // 目的：
   def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
     game =>{
       val (board, player) = game
-      posList.foldLeft((-100000, (-1,-1):Position))(
+      var hands = moveOrdering(board,player,depth,validMoves(board,player))
+      hands.foldLeft((-100000, (-1,-1):Position))(
         (s, p) => {
           val (cMax, cHand) = s
           if(outflanks(board, player, p)) {
@@ -568,5 +631,5 @@ object OthelloLib {
 object OthelloMain extends App {
   import OthelloLib._
 
-  playLoop(newGame, alphabeta(staticEval(15,6,-4,1), 8),firstMove)
+  playLoop(newGame,firstMove, alphabeta(staticEval(15,6,-4,1, 0.1), 7))
 }
