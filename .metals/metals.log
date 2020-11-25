@@ -1,0 +1,1686 @@
+2020.11.17 14:11:13 INFO  Started: Metals version 0.9.5 in workspace '/Users/yokoyamaakiradai/classes/prg1/othello2' for client vscode.
+2020.11.17 14:11:14 INFO  time: initialize in 1.42s
+2020.11.17 14:11:16 WARN  Build server is not auto-connectable.
+2020.11.17 14:11:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.17 14:11:21 INFO  no build target: using presentation compiler with only scala-library
+2020.11.19 19:49:07 INFO  Started: Metals version 0.9.5 in workspace '/Users/yokoyamaakiradai/classes/prg1/othello2' for client vscode.
+2020.11.19 19:49:13 INFO  time: initialize in 6.37s
+2020.11.19 19:49:18 WARN  Build server is not auto-connectable.
+2020.11.19 19:49:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:49:18 INFO  skipping build import with status 'Requested'
+2020.11.19 19:49:22 INFO  no build target: using presentation compiler with only scala-library
+2020.11.19 19:50:04 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:50:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:50:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:50:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/build.sbt
+11月 19, 2020 7:50:49 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 79
+2020.11.19 19:51:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:52:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:53:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:53:50 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:53:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:54:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:54:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:54:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:56:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:56:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:56:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:57:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:57:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:58:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 19:58:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:00:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:01:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:02:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:02:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:02:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:02:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:03:37 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.19 20:03:39 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.19 20:03:39 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.19 20:03:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:03:39 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.19 20:04:03 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.19 20:04:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:04:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:05:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 19, 2020 8:05:28 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1304
+2020.11.19 20:06:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:06:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:06:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:06:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:07:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 19, 2020 8:07:04 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1555
+2020.11.19 20:07:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:07:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 19, 2020 8:09:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1724
+11月 19, 2020 8:09:44 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1725
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8475)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8468)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8469)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8470)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8471)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8473)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8473)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8461, 8461, 8473)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8580)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8573)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8574)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8575)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8576)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8577)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8578)
+2020.11.19 20:15:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8566, 8566, 8578)
+2020.11.19 20:18:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:19:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:20:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:20:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:20:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:23:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8462, 8462, 8474)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8580)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8583)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8577)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8578)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8579)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8580)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8568, 8568, 8581)
+11月 19, 2020 8:24:03 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 3002
+2020.11.19 20:24:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:27:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8571, 8571, 8584)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8571, 8571, 8584)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8571, 8571, 8584)
+11月 19, 2020 8:34:29 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 3546
+11月 19, 2020 8:34:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 3670
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8589)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8582)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8583)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8584)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8585)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8587)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8587)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8574, 8574, 8587)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8610)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8603)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8604)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8605)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8606)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8605)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8606)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8608)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8608)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8595, 8595, 8608)
+2020.11.19 20:40:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:41:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.19 20:41:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 19, 2020 8:43:24 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 4959
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8420, 8420, 8433)
+11月 19, 2020 10:20:01 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 5659
+11月 19, 2020 10:24:15 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 5922
+2020.11.19 22:33:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 19, 2020 11:56:44 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 19, 2020 11:56:44 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+11月 19, 2020 11:57:02 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 19, 2020 11:57:02 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+11月 19, 2020 11:59:17 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: offset 8773, count -1, length 9404
+java.lang.StringIndexOutOfBoundsException: offset 8773, count -1, length 9404
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.11.20 00:00:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:01:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:02:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:02:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:02:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:03:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 20, 2020 12:03:28 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 7923
+2020.11.20 00:03:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:03:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 20, 2020 12:46:53 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 8229
+2020.11.20 00:47:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:47:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:47:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:48:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:48:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:51:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:51:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:51:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:51:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:52:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:52:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 00:53:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:22:50 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:23:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 20, 2020 1:24:11 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 8785
+2020.11.20 01:24:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:24:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:27:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:28:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:28:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:28:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 20, 2020 1:29:11 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 9193
+2020.11.20 01:29:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:30:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:32:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:32:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:33:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:33:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:34:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:34:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:35:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:35:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:35:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:36:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:38:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:38:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:40:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:41:40 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.20 01:41:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 01:47:38 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 20, 2020 1:47:42 午前 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTraceNotification
+2020.11.20 01:48:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:48:29 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.20 08:50:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:51:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:52:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:52:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:53:08 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.20 08:53:08 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.20 08:53:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:54:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:54:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:55:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:55:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:56:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 08:59:04 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 09:49:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 09:49:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 09:50:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:12:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:12:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:25:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:27:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:28:37 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:29:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:32:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:33:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:34:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:35:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:36:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:36:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:37:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:38:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:57:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 10:58:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:58:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:58:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:58:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:58:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:58:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:59:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:59:20 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:59:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 12:59:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 13:00:06 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.20 13:00:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 13:00:38 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 13:01:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 14:00:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 14:01:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.20 14:02:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 22, 2020 7:40:41 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 12777
+11月 22, 2020 7:47:06 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 13125
+2020.11.22 19:49:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:51:50 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:52:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:52:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:52:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:55:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:55:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:55:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:56:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:57:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:57:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:58:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:59:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 19:59:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:00:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:00:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:00:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:01:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:02:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:02:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:07:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:08:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:08:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:08:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 22, 2020 8:08:52 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 14473
+2020.11.22 20:08:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:10:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:10:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:10:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:11:02 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 20:11:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:11:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:11:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:11:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:11:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:12:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:27:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:27:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:27:19 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 20:27:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:27:19 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 20:27:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:28:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 20:28:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 22, 2020 9:47:54 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 16649
+2020.11.22 21:48:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:48:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:48:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:49:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 21:49:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 22, 2020 9:49:42 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+重大: Internal error: org.scalameta.UnreachableError: this code path should've been unreachable
+where lhsQual = List(k, l)
+java.util.concurrent.CompletionException: org.scalameta.UnreachableError: this code path should've been unreachable
+where lhsQual = List(k, l)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1702)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.scalameta.UnreachableError: this code path should've been unreachable
+where lhsQual = List(k, l)
+	at org.scalameta.UnreachableError$.raise(package.scala:40)
+	at scala.meta.internal.parsers.ScalametaParser.loop$5(ScalametaParser.scala:2348)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2365)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$15(ScalametaParser.scala:1997)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1997)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4210)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2590)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$2(ScalametaParser.scala:2584)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2582)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2581)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2419)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:622)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:632)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2397)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2395)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2379)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1819)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1979)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4210)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2590)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$2(ScalametaParser.scala:2584)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2582)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2581)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2419)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:622)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:632)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2397)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2395)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2379)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1819)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1979)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4210)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2590)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$2(ScalametaParser.scala:2584)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2582)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2581)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2419)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:622)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:632)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2397)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2395)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2379)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1819)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1979)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4210)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2590)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$2(ScalametaParser.scala:2584)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2582)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2581)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2419)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:622)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:632)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2397)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2395)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2379)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1819)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1979)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$2(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.stat(ScalametaParser.scala:4210)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4364)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2590)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2589)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$2(ScalametaParser.scala:2584)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockExpr$1(ScalametaParser.scala:2582)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2581)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2419)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:622)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:632)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2397)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2395)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2379)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$14(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1992)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1819)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$1(ScalametaParser.scala:1939)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1868)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4299)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4285)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4229)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:4284)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4281)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4138)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:536)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4138)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4143)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:4101)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:4085)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4128)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3900)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3892)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3776)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3758)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4251)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:4239)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:4229)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:4238)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4441)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$9(ScalametaParser.scala:4447)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4447)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4415)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4398)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:613)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:629)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4397)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4403)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:137)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:47)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:137)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$232.apply(ScalametaParser.scala:4459)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:66)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:64)
+	at scala.meta.internal.metals.Trees.didChange(Trees.scala:38)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$didChange$1(ScalaPresentationCompiler.scala:128)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	... 3 more
+
+2020.11.22 21:58:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 21:59:05 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:59:05 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+11月 22, 2020 9:59:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 17906
+2020.11.22 21:59:08 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:59:12 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:59:12 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:59:15 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 21:59:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 21:59:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:00:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:00:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:00:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:01:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:05:16 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.22 22:07:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:09:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:09:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:11:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:11:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.22 22:12:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:25:22 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 12:25:22 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 12:25:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:25:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:26:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:27:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:28:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:28:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:28:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:29:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:29:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:29:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:31:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 23, 2020 12:32:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 20183
+2020.11.23 12:32:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:33:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:33:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:34:05 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:34:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:35:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:35:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:36:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:44:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:45:50 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:46:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:48:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:48:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:51:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:51:08 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 12:51:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:51:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:52:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:54:44 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 12:56:20 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:57:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 12:59:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:00:02 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:00:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:00:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:01:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:01:56 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:01:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:01:56 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:03:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:03:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:03:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:03:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:06:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:07:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:08:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:08:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:09:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:09:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:09:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:10:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:10:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:11:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:12:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:14:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:16:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:17:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:19:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:19:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:21:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:22:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:23:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:23:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:23:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:24:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:24:19 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:24:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:24:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:32:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:33:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 23, 2020 1:34:07 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 24351
+2020.11.23 13:34:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:34:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:34:48 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:34:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:35:04 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:35:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:35:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:36:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:37:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:37:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:40:10 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 13:40:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 23, 2020 1:40:21 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: offset 8509, count -13, length 11464
+java.lang.StringIndexOutOfBoundsException: offset 8509, count -13, length 11464
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:268)
+	at scala.reflect.internal.Trees.$anonfun$itraverse$3(Trees.scala:1393)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2515)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1393)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1264)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:343)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:268)
+	at scala.reflect.api.Trees$Traverser.$anonfun$traverseTrees$1(Trees.scala:2492)
+	at scala.reflect.api.Trees$Traverser.traverseTrees(Trees.scala:2492)
+	at scala.reflect.internal.Trees.traverseComponents$1(Trees.scala:1348)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1394)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1264)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:343)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.11.23 13:40:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.23 13:40:29 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+11月 23, 2020 1:41:10 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: offset 8509, count -13, length 11464
+java.lang.StringIndexOutOfBoundsException: offset 8509, count -13, length 11464
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:268)
+	at scala.reflect.internal.Trees.$anonfun$itraverse$3(Trees.scala:1393)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2515)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1393)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1264)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:343)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:268)
+	at scala.reflect.api.Trees$Traverser.$anonfun$traverseTrees$1(Trees.scala:2492)
+	at scala.reflect.api.Trees$Traverser.traverseTrees(Trees.scala:2492)
+	at scala.reflect.internal.Trees.traverseComponents$1(Trees.scala:1348)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1394)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1264)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:343)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.11.23 13:41:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 23, 2020 1:41:24 午後 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+情報: Unsupported notification method: $/setTraceNotification
+2020.11.23 18:56:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 18:56:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+11月 23, 2020 6:56:54 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 25028
+2020.11.23 18:56:56 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 18:56:56 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 18:56:56 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.23 18:57:06 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 10:41:38 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:41:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:42:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:43:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:43:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:47:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 10:47:56 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 25455
+2020.11.24 10:47:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:48:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:48:51 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 10:48:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 10:49:18 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 25592
+2020.11.24 10:49:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8374, 8374, 8388)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8374, 8374, 8381)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8374, 8374, 8383)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8374, 8374, 8384)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8393)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8386)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8387)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8388)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8389)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8391)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8391)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8379, 8379, 8391)
+2020.11.24 10:49:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:49:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[List[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8374, 8374, 8392)
+2020.11.24 10:50:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:50:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:50:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 10:50:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 10:50:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 10:53:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:05:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:08:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:09:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:09:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:09:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:11:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:12:05 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:12:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:13:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:15:06 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 11:15:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:15:06 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 11:15:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:15:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:15:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8319)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8313)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8314)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8315)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8316)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8317)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8318)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8319)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8320)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8321)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8322)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8323)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8324)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8323)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8322)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8321)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8330)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8323)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8324)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8325)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8326)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8328)
+2020.11.24 11:16:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:23:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8310, 8310, 8328)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8329)
+2020.11.24 11:24:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:24:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:24:16 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:25:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:25:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:25:37 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:26:04 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:30:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:30:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:35:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 8304, 8304, 8329)
+2020.11.24 11:35:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:35:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 11:36:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 11:47:01 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 28116
+11月 24, 2020 12:06:20 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 28271
+2020.11.24 12:16:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:17:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:18:29 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:18:57 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 12:19:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:22:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:27:29 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:27:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:27:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:28:13 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 12:28:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 12:29:17 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 29472
+11月 24, 2020 12:29:23 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 24, 2020 12:29:23 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+2020.11.24 12:31:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:37:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 12:44:48 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 24, 2020 12:44:48 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+11月 24, 2020 12:45:12 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 12:45:14 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 12:45:15 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 12:45:17 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 12:47:05 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 30580
+2020.11.24 12:48:38 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11044, 11044, 11069)
+11月 24, 2020 12:52:15 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 24, 2020 12:52:15 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+11月 24, 2020 12:52:15 午後 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 24, 2020 12:52:15 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+2020.11.24 12:53:20 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 12:53:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:54:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11479)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11472)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11473)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11474)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11475)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11477)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11477)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11459, 11459, 11477)
+2020.11.24 12:57:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 12:57:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:05:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:11:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:14:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:14:37 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:15:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 1:15:39 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 32868
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11473, 11473, 11487)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11473, 11473, 11480)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11473, 11473, 11485)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11473, 11473, 11485)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11473, 11473, 11485)
+2020.11.24 13:15:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:15:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:16:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:16:38 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:22:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:22:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:23:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:23:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11487, 11487, 11499)
+2020.11.24 13:23:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:23:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 13:24:37 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:38:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:38:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 2:39:30 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 34077
+2020.11.24 14:42:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:43:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:43:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:48:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:48:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11050, 11050, 11068)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11050, 11050, 11068)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11050, 11050, 11068)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11044, 11044, 11069)
+11月 24, 2020 2:50:33 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 35208
+11月 24, 2020 2:50:33 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 35209
+2020.11.24 14:51:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:51:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:53:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:53:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 14:53:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 3:12:25 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: offset 12144, count -1, length 15913
+2020.11.24 15:12:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 15:13:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 10:48:28 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 36890
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11866, 11866, 11891)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11872, 11872, 11890)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11899, 11899, 11924)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11905, 11905, 11923)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11899, 11899, 11923)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11905, 11905, 11923)
+11月 24, 2020 10:55:03 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: offset 12345, count -1, length 16092
+11月 24, 2020 10:55:04 午後 scala.meta.internal.pc.CompletionProvider expected$1
+警告: offset 12345, count -1, length 16092
+11月 24, 2020 10:59:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 10:59:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 10:59:30 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11月 24, 2020 10:59:31 午後 scala.meta.internal.pc.completions.Completions completionPosition
+重大: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:446)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020.11.24 22:59:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11899, 11899, 11924)
+2020.11.24 23:00:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:00:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:00:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:01:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:01:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:02:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:02:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:02:58 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 23:03:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:03:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:06:48 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 23:08:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:08:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 24, 2020 11:32:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 39112
+11月 24, 2020 11:32:21 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 39113
+2020.11.24 23:32:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:33:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:33:46 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 23:33:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:34:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12827, 12827, 12845)
+2020.11.24 23:49:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:50:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:52:01 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.24 23:52:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.24 23:52:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13078)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13071)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13072)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13073)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13072)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13071)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13078)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13071)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13073)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13074)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13069, 13069, 13083)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13069, 13069, 13076)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13069, 13069, 13081)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[List[othello.OthelloLib.Square]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13082)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[List[othello.OthelloLib.Square]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13064, 13064, 13082)
+11月 25, 2020 12:20:18 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 40311
+11月 25, 2020 12:20:18 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 40312
+11月 25, 2020 12:20:18 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 40313
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[List[othello.OthelloLib.Square]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13075, 13075, 13093)
+2020.11.25 00:21:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 12:22:31 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 40652
+11月 25, 2020 12:22:31 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 40653
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11520, 11520, 11534)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11520, 11520, 11527)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[othello.OthelloLib.Square]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11520, 11520, 11532)
+2020.11.25 00:24:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:24:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:25:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:25:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:26:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:26:19 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:26:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 00:35:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 1:26:33 午前 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 25, 2020 1:26:33 午前 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+11月 25, 2020 1:26:35 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 41935
+2020.11.25 01:29:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 01:33:53 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 1:34:14 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 42437
+2020.11.25 01:34:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 1:48:34 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 42646
+11月 25, 2020 1:48:34 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 42647
+11月 25, 2020 1:48:34 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 42648
+2020.11.25 01:48:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 01:52:29 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 01:52:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 01:57:20 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:00:14 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+11月 25, 2020 2:01:08 午前 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 25, 2020 2:01:08 午前 scala.meta.internal.pc.CompilerAccess handleError
+重大: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13134, 13134, 13149)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13134, 13134, 13143)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13134, 13134, 13144)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13134, 13134, 13145)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13134, 13134, 13151)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13160)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13153)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13154)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13155)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13156)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13157)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13158)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13158)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13140, 13140, 13158)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13167, 13167, 13192)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13167, 13167, 13192)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13173, 13173, 13191)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13167, 13167, 13192)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13167, 13167, 13192)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13167, 13167, 13192)
+11月 25, 2020 2:03:18 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44131
+11月 25, 2020 2:03:19 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44148
+11月 25, 2020 2:03:38 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44268
+2020.11.25 02:04:33 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:04:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:04:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:05:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:06:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:09:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 2:10:14 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44860
+11月 25, 2020 2:10:14 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44861
+11月 25, 2020 2:10:14 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 44862
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12066)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12059)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12060)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12061)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12062)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12063)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12062)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12061)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12062)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12063)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12062)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12051, 12051, 12063)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12072)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12065)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12066)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12067)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12068)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12057, 12057, 12070)
+2020.11.25 02:10:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 2:13:04 午前 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 25, 2020 2:13:04 午前 scala.meta.internal.pc.CompilerAccess handleError
+重大: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader 'app')
+	at scala.reflect.internal.Symbols$Symbol.alternatives(Symbols.scala:1980)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall.alternatives(SignatureHelpProvider.scala:147)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2(SignatureHelpProvider.scala:275)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2$adapted(SignatureHelpProvider.scala:274)
+	at scala.Option$WithFilter.$anonfun$withFilter$1(Option.scala:332)
+	at scala.Option$WithFilter.$anonfun$withFilter$1$adapted(Option.scala:332)
+	at scala.Option.filter(Option.scala:289)
+	at scala.Option$WithFilter.map(Option.scala:329)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:274)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.11.25 02:13:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 02:13:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11383, 11383, 11401)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[IndexedSeq[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 11377, 11377, 11402)
+2020.11.25 02:18:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13674, 13674, 13692)
+11月 25, 2020 7:32:35 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 45648
+2020.11.25 07:32:53 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 07:32:58 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12751, 12751, 12769)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12751, 12751, 12769)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in IndexedSeq[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 9216, 9216, 9234)
+2020.11.25 07:36:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 07:51:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 07:51:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 07:51:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in () => <error>RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 12149, 12161, 15084)
+11月 25, 2020 7:56:44 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 46833
+2020.11.25 08:05:05 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 8:05:29 午前 scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+情報: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+11月 25, 2020 8:05:29 午前 scala.meta.internal.pc.CompilerAccess handleError
+重大: assertion failed: file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala: 19460 >= 19460
+java.lang.AssertionError: assertion failed: file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala: 19460 >= 19460
+	at scala.reflect.internal.util.SourceFile.position(SourceFile.scala:33)
+	at scala.tools.nsc.CompilationUnits$CompilationUnit.position(CompilationUnits.scala:133)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.11.25 08:05:29 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:05:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:06:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:07:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:08:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:09:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:10:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:10:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:10:50 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:11:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:12:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:13:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:14:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:16:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Array[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13500, 13500, 13520)
+2020.11.25 08:17:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:17:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:20:37 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:20:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 8:27:17 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 48719
+11月 25, 2020 8:27:22 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 48748
+11月 25, 2020 8:30:04 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 49266
+2020.11.25 08:30:12 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 08:31:41 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:34:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:41:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:42:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:44:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:52:23 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:57:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15403)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15396)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[<error>]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15399)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15401)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15401)
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in List[Double]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 15389, 15389, 15401)
+2020.11.25 08:58:20 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:58:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 08:59:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:00:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:00:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:01:28 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 09:01:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:01:58 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 09:01:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:07:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 9:20:23 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 52095
+11月 25, 2020 9:20:23 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 52096
+11月 25, 2020 9:20:23 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 52097
+2020.11.25 09:24:14 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:24:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:26:01 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+something's wrong: no file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala in Array[Array[Double]]RangePosition(file:///Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala, 13838, 13838, 13858)
+2020.11.25 09:27:02 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:27:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:27:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:30:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:30:17 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:31:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:31:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:35:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:35:48 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:35:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:36:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:36:42 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:36:46 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:36:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:36:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:37:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:38:13 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:38:40 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:38:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:39:15 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:39:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:40:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:40:56 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:48:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:50:28 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:51:39 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 09:51:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:52:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:53:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 09:55:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:12:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:12:31 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:12:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:16:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:16:43 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:17:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:19:12 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:19:25 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:19:35 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:22:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:23:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:25:37 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:25:37 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:25:42 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:26:15 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:26:47 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:26:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:27:10 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:27:51 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:27:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:28:09 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:28:27 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:29:32 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:29:58 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:29:58 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:30:37 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+11月 25, 2020 10:31:10 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 55689
+11月 25, 2020 10:31:10 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 55690
+11月 25, 2020 10:31:10 午前 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 55691
+2020.11.25 10:31:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:33:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:35:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:36:39 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:39:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:39:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:39:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 10:39:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:39:49 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 10:41:05 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 11:34:52 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 11:35:22 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 15:43:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 15:44:45 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 15:54:29 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 15:55:07 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 15:58:59 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 15:59:38 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:00:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 4:02:51 午後 scala.meta.internal.pc.CompilerAccess handleError
+重大: offset 11390, count -2, length 21939
+java.lang.StringIndexOutOfBoundsException: offset 11390, count -2, length 21939
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:375)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:373)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:198)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:309)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:268)
+	at scala.reflect.internal.Trees.traverseComponents$1(Trees.scala:1358)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1394)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1264)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:343)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:316)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:315)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:924)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:923)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:315)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:303)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:272)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.11.25 16:03:11 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:03:21 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:05:03 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:05:31 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:06:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:10:05 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:10:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:10:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:10:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:16:08 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:16:44 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:16:55 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:17:20 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 16:17:20 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 16:17:22 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 16:17:22 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 16:17:26 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:17:30 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:20:06 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:21:24 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 16:21:51 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:34:20 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:35:34 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:36:54 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:37:18 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 20:37:18 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 8:40:00 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 58928
+11月 25, 2020 8:40:00 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 58929
+2020.11.25 20:40:36 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:40:49 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+2020.11.25 20:41:00 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
+11月 25, 2020 9:24:29 午後 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+警告: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": "git:/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala?%7B%22path%22%3A%22%2FUsers%2Fyokoyamaakiradai%2Fclasses%2Fprg1%2Fothello2%2Fsrc%2Fothello%2Fscala%2Fothello.scala%22%2C%22ref%22%3A%22~%22%7D"
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:440)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:437)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:917)
+	... 15 more
+
+2020.11.25 21:25:54 WARN  code navigation does not work for the file '/Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala' because it doesn't belong to a build target.
+2020.11.25 21:26:57 WARN  no build target for: /Users/yokoyamaakiradai/classes/prg1/othello2/src/othello/scala/othello.scala
