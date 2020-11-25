@@ -56,6 +56,18 @@ object OthelloLib {
       (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7),
       (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8))
 
+  //盤面の評価値
+  val evalList: List[List[Int]] = 
+    List( List(100,-40,20,5,5,20,-40,100),
+        List(-40,-80,-1,-1,-1,-1,-80,-40),
+        List(20,-1,5,1,1,5,-1,20),
+        List(5,-1,1,0,0,1,-1,5),
+        List(5,-1,1,0,0,1,-1,5),
+        List(20,-1,5,1,1,5,-1,20),
+        List(-40,-80,-1,-1,-1,-1,-80,-40),
+        List(100,-40,20,5,5,20,-40,100))
+
+
   // ゲームの状態
   type Game = (Board, Player)
 
@@ -275,12 +287,114 @@ object OthelloLib {
   //////////////////
   // オリジナルの戦略 //
   //////////////////
+    // 1. minimaxEval
+  // 目的：minimax法に基づいてゲームの状態を評価する
+  def minimaxEval(heuristic: Heuristic, depth: Int, game: Game): Int = {
+    val (board,player) = game 
+    if(gameOver(game)) countDiff(game)
+    else if(depth == 0) heuristic(game)
+    else if(validMoves(board,player) == Nil) minimaxEval(heuristic,depth,(board, opponent(player)))
+    else{
+      val nextPoses = validMoves(board,player)
+      val nextBoards = nextPoses.map((pos:Position) => applyMove(board, player, pos)._1)
+      val nextEvals = nextBoards.map((b:Board) => minimaxEval(heuristic, depth-1, (b,opponent(player))))
+      player match{
+        case Black => nextEvals.max
+        case White => nextEvals.min
+      }
+    }
+  }
 
+  // 2. minimax
+  // 目的：minimax法に基づいて最適な手を求める
+  def minimax(heuristic: Heuristic, depth: Int): Strategy = {
+    (game:Game) => {
+      val (board,player) = game
+      val nextPoses = validMoves(board,player)
+      val nextPosesAndEvals = nextPoses.map((pos) => (pos, minimaxEval(heuristic, depth-1, applyMove(board, player, pos))))
+      player match{
+        case Black => nextPosesAndEvals.foldLeft(nextPosesAndEvals.head) ((xs,x) => if(x._2>xs._2) x;else xs)._1
+        case White => nextPosesAndEvals.foldLeft(nextPosesAndEvals.head) ((xs,x) => if(x._2<xs._2) x;else xs)._1
+      }
+    }
+  }
+
+  // 3. alphabetaEval
+  // 目的：alpha-beta法に基づいてゲームの状態を評価する
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val (board,player) = game 
+    if(gameOver(game)) countDiff(game)
+    else if(depth == 0 ) heuristic(game)
+    else if(validMoves(board,player) == Nil) alphabetaEval(heuristic,depth,a,b,(board,opponent(player)))
+    else {
+      val nextPoses = validMoves(board,player)
+      val nextBoards = nextPoses.map((pos:Position) => applyMove(board, player, pos)._1)
+      player match{
+        case Black =>{ 
+          var v = Int.MinValue; var alpha = a
+          for(child <- nextBoards){
+            v = max(v,alphabetaEval(heuristic,depth-1,alpha,b,(child,opponent(player))))
+            alpha = max(alpha,v)
+            if (alpha >= b) return v 
+          }
+          v
+        }
+        case White => {
+          var v = Int.MaxValue; var beta = b
+          for(child <- nextBoards){
+            v = min(v,alphabetaEval(heuristic,depth-1,a,beta,(child,opponent(player))))
+            beta = min(beta,v)
+            if (beta <= a) return v 
+          }
+          v
+        }
+      }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：alpha-beta法に基づいて最適な手を求める
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    (game:Game) =>{
+      val (board,player) = game
+      val nextPoses = validMoves(board,player)
+      var alpha = Int.MinValue; var beta = Int.MaxValue
+      val nextPosesAndEvals: List[(Position,Int)] =
+        for (pos <- nextPoses) yield {
+          val nextBoard = applyMove(board, player, pos)._1
+          val nextEval = alphabetaEval(heuristic,depth-1,alpha,beta,(nextBoard,opponent(player)))
+          if(player == Black) alpha = max(alpha,nextEval)
+          else beta = min(beta,nextEval)
+          (pos,nextEval)
+        }
+      player match{
+        case Black => nextPosesAndEvals.foldLeft(nextPosesAndEvals.head) ((xs,x) => if(x._2>xs._2) x;else xs)._1
+        case White => nextPosesAndEvals.foldLeft(nextPosesAndEvals.head) ((xs,x) => if(x._2<xs._2) x;else xs)._1
+      }
+    }
+  }
+
+  //盤面値による評価
+  def countvalue(game: Game): Int = {
+    val (board,player) = game
+    var sum = 0
+    for(i <- 0 to 7){
+      for(j <- 0 to 7){
+        if (board(i)(j) == Black)
+        sum += evalList(i)(j)        
+        else if (board(i)(j) == White)
+        sum -= evalList(i)(j)        
+        else
+        sum = sum
+      }
+    }
+    sum
+  }
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(countvalue,7), randomMove)
 }
