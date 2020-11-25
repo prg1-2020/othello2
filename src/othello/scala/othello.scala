@@ -355,14 +355,14 @@ object OthelloLib {
   def phase1: Heuristic = {
     game => {
       val (board, player) = game
-      kaihodoSide(board, player) * 1000 + kaihodo(board, player)
+      kaihodoSide(board, player) * 100 + kaihodo(board, player)
     }
   }
 
   def phase2: Heuristic = {
     game => {
       val (board, player) = game
-       kaihodoSide(board, player) * 5 + kaihodo(board, player)
+      kaihodoSide(board, player) * 1000 + kaihodo(board, player) * 100 + countPieces(board, player)
     }
   }
 
@@ -451,17 +451,16 @@ object OthelloLib {
           }
         }
         
-        if(countSide(board, player) <= 4){
-          goodPos(phase1, 6)
+        if(countSide(board, player) <= 1){
+          goodPos(phase1, 5)
         }
         else if(nanteme <= 54){
-          goodPos(phase2, 5)
+          goodPos(phase2, 4)
         }
         else{
           goodPos(countDiff, 10)
         }
 
-      
       }
     }
 
@@ -476,6 +475,6 @@ object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, myStrategy, alphabeta(countDiff, 4))
+  playLoop(newGame, myStrategy, randomMove)
   
 }
