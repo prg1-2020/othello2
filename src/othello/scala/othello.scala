@@ -13,6 +13,7 @@ import scala.math.max
 import scala.math.min
 import spire.math.ULong
 import spire.math.UByte
+import scala.collection.mutable.HashMap
 
 object OthelloLib {
   // マス目
@@ -333,6 +334,15 @@ object OthelloLib {
     val emptyMask = ~(playerBoard | opponentBoard)
     (horizontal | vertical | diagonals_1 | diagonals_2) & emptyMask
   }
+  def get_moves(P: ULong, O: ULong): ULong = {
+    val mask = O & ULong(0x7e7e7e7e7e7e7e7eL);
+
+    (get_some_moves(P, mask, 1) | get_some_moves(P, O, 8) | get_some_moves(
+      P,
+      mask,
+      7
+    ) | get_some_moves(P, mask, 9)) & ~(P | O); // mask with empties
+  }
 
   // board の pos に player が石を置いた結果、得られる状態を返す
   def applyMove(board: Board, player: Player, pos: Position): Game = {
@@ -433,9 +443,109 @@ object OthelloLib {
     }
   }
 
+  // endgame
+  def board_solve(game: Game): Int = {
+    val (board, player) = game
+    val (black, white) = board
+    val (p, o) = if (player == Black) (black, white) else (white, black)
+    val n_discs_p = popcnt(p).toInt
+    val n_discs_o = popcnt(o).toInt
+    val n_empties = 64 - n_discs_p - n_discs_o
+
+    var score = n_discs_p - n_discs_o
+
+    if (score < 0) score -= n_empties
+    else if (score > 0) score += n_empties
+
+    score
+  }
+
   /////////
   // 課題 //
   /////////
+  val SCORE_INF = 127
+  val SCORE_MIN = -64
+  val SCORE_MAX = 64
+
+  def search_eval_0(game: Game): Int = {
+    var score = 100 //heuristic
+    if (score > 0) score += 64
+    else score -= 64
+    score /= 128
+
+    if (score <= SCORE_MIN) score = SCORE_MIN + 1
+    else if (score >= SCORE_MAX) score = SCORE_MAX - 1
+    score
+  }
+  // def search_eval_1(game: Game, alpha: Int, beta: Int): Int = {
+  //   val (board, player) = game
+  //   val (black, white) = board
+  //   val (playerBoard, opponentBoard) =
+  //     if (player == Black) (black, white) else (white, black)
+  //   val moves = get_moves(playerBoard, opponentBoard)
+
+  //   var bestscore = 0
+  //   if (moves) {
+  //     bestscore =- SCORE_INF
+  //     if (beta >= SCORE_MAX) beta = SCORE_MAX - 1
+
+  //   }
+  // }
+  // def search_eval_2(game: Game, alpha: Int, beta: Int): Int = {
+  //   val (board, player) = game
+  //   val (black, white) = board
+  //   val (p, o) = if (player == Black) (black, white) else (white, black)
+  //   val moves = get_moves(p, o)
+  //   var bestscore = -SCORE_INF
+  //   var score = 0
+  //   var a = alpha
+
+  //   if (moves != ULong(0)) {
+  //     longToPosList(moves).foreach(pos => {
+  //       score = -search_eval_1((board, opponent(player)), -beta, -a)
+  //       if (score > bestscore) {
+  //         bestscore = score
+  //         if (bestscore >= beta) return bestscore
+  //         else if (bestscore > a) a = bestscore
+  //       }
+  //     })
+  //   } else {
+  //     if (get_moves(o, p) != ULong(0)) {
+  //       bestscore = -search_eval_2((board, opponent(player)), -beta, -a)
+
+  //     } else {
+  //       bestscore = board_solve(game)
+  //     }
+  //   }
+  //   bestscore
+  // }
+  // def NWS_shallow(
+  //     game: Game,
+  //     alpha: Int,
+  //     depth: Int,
+  //     hash_table: HashMap
+  // ): Int = {
+  //   val beta = alpha + 1
+  //   if (depth == 2) return search_eval_1(game, alpha, beta)
+
+  //   val (board, player) = game
+  //   val hash_code: ULong = board_get_hash_code(board)
+  //   if (hash_get(hash_table, board, hash_code, hash_data)) return score
+  //   val movelist = validMoves(board, player)
+  //   if (movelist == ULong(0)) {
+  //     if (validMoves(board, opponent(player)) != ULong(0)) {
+  //       // pass
+  //       bestscore =
+  //         -NWS_shallow((board, opponent(player)), -beta, depth, hash_table)
+  //       bestmove = PASS
+  //     } else {
+  //       // gameover
+  //       bestscore = search_solve(game)
+  //       bestmove = NOMOVE
+  //     }
+
+  //   }
+  // }
 
   // 1. minimaxEval
   // 目的：minimax法に基づいてゲームの状態を評価する
@@ -522,10 +632,12 @@ object OthelloLib {
       game: Game
   ): Int = {
     val (board, player) = game
-    if (depth == 0 || gameOver(game)) return heuristic(game)
+    if (depth == 0) return heuristic(game)
+    if (gameOver(game)) return board_solve(game)
     else {
       val validList = validMoves(board, player)
       if (longToPosList(validList) == Nil)
+        // path
         return alphabetaEval(
           heuristic,
           depth,
