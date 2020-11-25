@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(115d551a-0c68-4518-9d61-1c732481a016), Some(CommandSource(console0)))[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/akihiro/repos/othello2/src/othello/target/scala-2.13/classes ...[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m/home/akihiro/repos/othello2/src/othello/scala/othello.scala:102:50: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `printArBoard`'s return type[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m  def printArBoard(arBoard: Array[Array[Square]]){[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m[0J
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 300 s (05:00), completed 2020/11/25 23:45:46[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m9.247 seconds of the last 10 seconds were spent in garbage collection. You may want to increase the project heap size using `-Xmx` or try a different gc algorithm, e.g. `-XX:+UseG1GC`, for better performance.[0m[0J
