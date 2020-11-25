@@ -251,7 +251,11 @@ object OthelloLib {
     }
   }
 
-  // ゲームの開始
+
+  //////////////////
+  // オリジナルの戦略 //
+  //////////////////
+    // ゲームの開始
   def playLoop(game: Game, strat1: Strategy, strat2: Strategy): Game = {
     val (board, player) = game
     if (gameOver(game)) {
@@ -271,10 +275,103 @@ object OthelloLib {
       playLoop(newgame, strat2, strat1)
     }
   }
+  // 角、辺、角の周辺、中央2*2の座標をまとめたリスト
+  val corners: List[Position] = List((1,1),(1,8),(8,1),(8,8))
+  val edges: List[Position] = List((1,3),(1,4),(1,5),(1,6),(3,1),(3,8),(4,1),(4,8),(5,1),(5,8),(6,1),(6,8),(8,3),(8,4),(8,5),(8,6))
+  val danger: List[Position] = List((1,2),(1,7),(2,1),(2,2),(2,7),(2,8),(7,1),(7,2),(7,7),(7,8),(8,2),(8,7))
+  val center: List[Position] = List((4,4),(4,5),(5,4),(5,5))
 
-  //////////////////
-  // オリジナルの戦略 //
-  //////////////////
+  // 自分の考えた評価関数
+  def betaOthello: Heuristic = {
+    game => 
+      var value: Int = 0
+      if(countPieces(game._1, Black) + countPieces(game._1, White)<20){
+        for(x <- corners){
+          if(boardRef(game._1,x) == Black) value = value + 15;
+          else if(boardRef(game._1,x) == White) value = value - 15;
+        }
+        for(x <- edges){
+          if(boardRef(game._1,x) == Black) value += 3;
+          else if(boardRef(game._1,x) == White) value -= 3;
+        }
+        for(x <- danger){
+          if(boardRef(game._1,x) == Black) value -= 5;
+          else if(boardRef(game._1,x) == White) value += 5;
+        }
+        for(x <- center){
+          if(boardRef(game._1,x) == Black) value += 5;
+          else if(boardRef(game._1,x) == White) value -= 5;
+        }
+        if(validMoves(game._1,Black)==Nil) value -= 50
+        if(validMoves(game._1,White)==Nil) value += 50
+      }else if(countPieces(game._1, Black) + countPieces(game._1, White)<42){
+        for(x <- corners){
+          if(boardRef(game._1,x) == Black) value = value + 10;
+          else if(boardRef(game._1,x) == White) value = value - 10;
+        }
+        for(x <- center){
+          if(boardRef(game._1,x) == Black) value += 4;
+          else if(boardRef(game._1,x) == White) value -= 4;
+        }
+        for(x <- danger){
+          if(boardRef(game._1,x) == Black) value -= 3;
+          else if(boardRef(game._1,x) == White) value += 3;
+        }
+        if(validMoves(game._1,Black)==Nil) value -= 20
+        if(validMoves(game._1,White)==Nil) value += 20
+      }else if(countPieces(game._1, Black) + countPieces(game._1, White)<55){
+        for(x <- corners){
+          if(boardRef(game._1,x) == Black) value = value + 1;
+          else if(boardRef(game._1,x) == White) value = value - 1;
+        }
+        if(validMoves(game._1,Black)==Nil) value -= 10
+        if(validMoves(game._1,White)==Nil) value += 10
+      }else{
+        countPieces(game._1, Black) - countPieces(game._1, White)
+      }
+      value
+  }
+  //  alphabetaEval
+  // 目的：alpha-beta 法に基づいてゲームの状態を評価する
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val list :List[Position] = validMoves(game._1,game._2)
+    if(gameOver(game)) countDiff(game)
+    else if(depth == 0) heuristic(game)
+    else if(validMoves(game._1,game._2)==Nil) alphabetaEval(heuristic,depth,a,b,(game._1,opponent(game._2)))
+    else game._2 match {
+      case Black =>
+        var v1 = Int.MinValue
+        var alpha = a
+        for (c1 <- list){
+          v1 = max(v1, alphabetaEval(heuristic, depth-1, alpha, b, applyMove(game._1,game._2,c1)))
+          alpha = max(alpha, v1)
+          if (alpha >= b) return v1
+        }
+          return v1
+      case White =>
+        var v2  = Int.MaxValue
+        var beta = b
+        for (c2 <- list){
+          v2 = min(v2, alphabetaEval(heuristic, depth-1, a, beta, applyMove(game._1,game._2,c2)))
+          beta = min(beta, v2)
+          if (beta <= a) return v2
+        }
+          return v2
+    }
+  }
+
+  //  alphabeta
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    game =>
+      val list :List[Position] = validMoves(game._1,game._2)
+      val newList :List[(Int,Position)] = list.map((x:Position) => (alphabetaEval(heuristic, depth-1,Int.MinValue,Int.MaxValue,applyMove(game._1,game._2,x)),x))
+      val (board, player) = game
+      player match {
+        case Black => newList.max._2
+        case White => newList.min._2
+      }
+  }
+  
 
 }
 
@@ -282,5 +379,5 @@ object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, alphabeta(betaOthello,7), randomMove)
 }
