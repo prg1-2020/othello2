@@ -276,11 +276,209 @@ object OthelloLib {
   // オリジナルの戦略 //
   //////////////////
 
+  //解放度
+  def kaihodo(board: Board, player: Player): Int ={
+    validMoves(board, player).length
+  }
+
+  val posListCenter: List[Position] =
+    List(
+       (3, 3), (4, 3), (5, 3), (6, 3), 
+       (3, 4), (4, 4), (5, 4), (6, 4), 
+       (3, 5), (4, 5), (5, 5), (6, 5), 
+       (3, 6), (4, 6), (5, 6), (6, 6))
+
+  val posListSide: List[Position] =
+    List((1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1),
+      (1, 2), (8, 2),
+      (1, 3), (8, 3),
+      (1, 4), (8, 4),
+      (1, 5), (8, 5),
+      (1, 6), (8, 6),
+      (1, 7), (8, 7),
+      (1, 8), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8))
+
+  val posListCorner: List[Position] =
+    List((1, 1), (8, 1),
+            (1, 8), (8, 8))
+
+
+  //中央のコマの数
+  def countCenter(board: Board, player: Player): Int = {
+    posListCenter.foldLeft(0){
+      (v: Int, pos) => {
+        val (x, y) = pos
+        if (boardRef(board, pos) == player) v+1
+        else v
+      }
+    }
+  }
+
+  def countSide(board: Board, player: Player): Int = {
+    posListSide.foldLeft(0){
+      (v: Int, pos) => {
+        val (x, y) = pos
+        if (boardRef(board, pos) == player) v+1
+        else v
+      }
+    }
+  }
+
+  def countCorner(board: Board, player: Player): Int = {
+    posListCorner.foldLeft(0){
+      (v: Int, pos) => {
+        val (x, y) = pos
+        if (boardRef(board, pos) == player) v+1
+        else v
+      }
+    }
+  }
+
+  
+
+  //中央での開放度
+  def kaihodoCenter(board: Board, player: Player): Int = {
+    posListCenter.filter(outflanks(board, player, _)).filter(boardRef(board, _) == Empty).length
+  }
+
+  //辺での開放度（角を含む）
+  def kaihodoSide(board: Board, player: Player): Int = {
+    posListSide.filter(outflanks(board, player, _)).filter(boardRef(board, _) == Empty).length
+  }
+
+  //角での開放度
+  def kaihodoCorner(board: Board, player: Player): Int ={
+    posListCorner.filter(outflanks(board, player, _)).filter(boardRef(board, _) == Empty).length
+  }
+
+
+  def phase1: Heuristic = {
+    game => {
+      val (board, player) = game
+      countSide(board, Black)*1000 + kaihodoSide(board, Black) * 5 + kaihodo(board, Black) * 5 + countPieces(board, Black) - countSide(board, White)* 1000 -  kaihodoSide(board, White) * 5 - kaihodo(board, White)*5 -countPieces(board, White)
+    }
+  }
+
+  def phase2: Heuristic = {
+    game => {
+      val (board, player) = game
+      countCorner(board, Black)*100 + countSide(board, Black) * 5 + kaihodo(board, Black) * 2 + countPieces(board, Black) - countCorner(board, White)*10 - countSide(board, White) * 5 - kaihodo(board, Black)*2 + countPieces(board, White)
+    }
+  }
+
+  def phase3: Heuristic = {
+    game => {
+      val (board, player) = game
+      countCorner(board, Black)*100 + countSide(board, Black) * 5 + countPieces(board, Black) - countCorner(board, White)*100  - countSide(board, White)*5 - countPieces(board, White)
+    }
+  }
+
+
+
+
+    // 3. alphabetaEval
+  // 目的：
+  def alphabetaEval(heuristic: Heuristic, depth: Int, a: Int, b: Int, game: Game): Int = {
+    val (board, player) = game
+    val posList = validMoves(board, player)
+    
+    if(gameOver(game) || depth == 0) heuristic(game)
+    else if(posList == Nil) alphabetaEval(heuristic, depth, a, b, (board, opponent(player)))
+    else{
+      player match{
+        case Black => {
+          var v = Int.MinValue
+          var alpha = a
+          for(c <- posList.map(applyMove(board, player, _))){
+            v = max(v, alphabetaEval(heuristic, depth - 1, alpha, b, c))
+            alpha = max(alpha, v)
+            if (alpha >= b) return v
+          }
+          return v
+        }
+        case White => {
+          var v = Int.MaxValue
+          var beta = b
+          for(c <- posList.map(applyMove(board, player, _))){
+            v = min(v, alphabetaEval(heuristic, depth - 1, a, beta, c))
+            beta = min(beta, v)
+            if (beta <= a) return v
+          }
+          return v
+        }
+      }
+    }
+  }
+
+  // 4. alphabeta
+  // 目的：
+  def alphabeta(heuristic: Heuristic, depth: Int): Strategy = {
+    
+    game => {
+      val (board, player) = game
+      val tlist = validMoves(board, player).map(
+        position => (position, alphabetaEval(heuristic, depth, Int.MinValue, Int.MaxValue ,applyMove(board, player, position)))
+      )
+
+      player match{
+        case Black => tlist.foldLeft(((1, 1), Int.MinValue)){
+          (v, ps) => if(v._2 > ps._2) v else ps
+        }._1
+        case White => tlist.foldLeft(((1, 1), Int.MaxValue)){
+          (v, ps) => if(v._2 < ps._2) v else ps
+        }._1
+      }
+
+    }
+  }
+
+    def myStrategy: Strategy = {
+      game =>{
+      
+        val (board, player) = game
+        val nanteme = countPieces(game) + countPieces((board, opponent(player)))
+        def goodPos(heuristic: Heuristic, depth: Int): Position = {
+          val tlist = validMoves(board, player).map(
+            position => (position, alphabetaEval(heuristic, depth, Int.MinValue, Int.MaxValue ,applyMove(board, player, position)))
+          )
+
+          player match{
+            case Black => tlist.foldLeft(((0, 0), Int.MinValue)){
+              (v, ps) => if(v._2 > ps._2) v else ps
+            }._1
+            case White => tlist.foldLeft(((0, 0), Int.MaxValue)){
+              (v, ps) => if(v._2 < ps._2) v else ps
+            }._1
+          }
+        }
+        
+        if(countSide(board, player) <= 4){
+          goodPos(phase1, 6)
+        }
+        else if(nanteme <= 30){
+          goodPos(phase2, 6)
+        }
+        else if(nanteme <= 54){
+          goodPos(phase3, 6)
+        }
+        else{
+          goodPos(countDiff, 10)
+        }
+
+      }
+    }
+
+  
+
+  
+
+
 }
 
 object OthelloMain extends App {
   import OthelloLib._
 
   // 1つ目の randomMove を自分の戦略に変更
-  playLoop(newGame, randomMove, randomMove)
+  playLoop(newGame, myStrategy, randomMove)
+  
 }
