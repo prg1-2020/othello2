@@ -355,14 +355,21 @@ object OthelloLib {
   def phase1: Heuristic = {
     game => {
       val (board, player) = game
-      kaihodoSide(board, player) * 100 + kaihodo(board, player)
+      countSide(board, Black)*1000 + kaihodoSide(board, Black) * 5 + kaihodo(board, Black) * 5 + countPieces(board, Black) - countSide(board, White)* 1000 -  kaihodoSide(board, White) * 5 - kaihodo(board, White)*5 -countPieces(board, White)
     }
   }
 
   def phase2: Heuristic = {
     game => {
       val (board, player) = game
-      kaihodoSide(board, player) * 1000 + kaihodo(board, player) * 100 + countPieces(board, player)
+      countCorner(board, Black)*100 + countSide(board, Black) * 5 + kaihodo(board, Black) * 2 + countPieces(board, Black) - countCorner(board, White)*10 - countSide(board, White) * 5 - kaihodo(board, Black)*2 + countPieces(board, White)
+    }
+  }
+
+  def phase3: Heuristic = {
+    game => {
+      val (board, player) = game
+      countCorner(board, Black)*100 + countSide(board, Black) * 5 + countPieces(board, Black) - countCorner(board, White)*100  - countSide(board, White)*5 - countPieces(board, White)
     }
   }
 
@@ -383,7 +390,7 @@ object OthelloLib {
           var v = Int.MinValue
           var alpha = a
           for(c <- posList.map(applyMove(board, player, _))){
-            v = max(v, alphabetaEval(heuristic, depth - 1, a, b, c))
+            v = max(v, alphabetaEval(heuristic, depth - 1, alpha, b, c))
             alpha = max(alpha, v)
             if (alpha >= b) return v
           }
@@ -393,7 +400,7 @@ object OthelloLib {
           var v = Int.MaxValue
           var beta = b
           for(c <- posList.map(applyMove(board, player, _))){
-            v = min(v, alphabetaEval(heuristic, depth - 1, a, b, c))
+            v = min(v, alphabetaEval(heuristic, depth - 1, a, beta, c))
             beta = min(beta, v)
             if (beta <= a) return v
           }
@@ -414,20 +421,14 @@ object OthelloLib {
       )
 
       player match{
-        case Black => tlist.foldLeft(((0, 0), -64)){
+        case Black => tlist.foldLeft(((1, 1), Int.MinValue)){
           (v, ps) => if(v._2 > ps._2) v else ps
         }._1
-        case White => tlist.foldLeft(((0, 0), 64)){
+        case White => tlist.foldLeft(((1, 1), Int.MaxValue)){
           (v, ps) => if(v._2 < ps._2) v else ps
         }._1
       }
 
-      /*
-      .sortWith(
-        if(player == Black) (x, y) => x._2 > y._2
-        else (x, y) => x._2 < y._2
-      ).head._1
-      */
     }
   }
 
@@ -442,20 +443,23 @@ object OthelloLib {
           )
 
           player match{
-            case Black => tlist.foldLeft(((0, 0), -64)){
+            case Black => tlist.foldLeft(((0, 0), Int.MinValue)){
               (v, ps) => if(v._2 > ps._2) v else ps
             }._1
-            case White => tlist.foldLeft(((0, 0), 64)){
+            case White => tlist.foldLeft(((0, 0), Int.MaxValue)){
               (v, ps) => if(v._2 < ps._2) v else ps
             }._1
           }
         }
         
-        if(countSide(board, player) <= 1){
-          goodPos(phase1, 5)
+        if(countSide(board, player) <= 4){
+          goodPos(phase1, 6)
+        }
+        else if(nanteme <= 30){
+          goodPos(phase2, 6)
         }
         else if(nanteme <= 54){
-          goodPos(phase2, 4)
+          goodPos(phase3, 6)
         }
         else{
           goodPos(countDiff, 10)
